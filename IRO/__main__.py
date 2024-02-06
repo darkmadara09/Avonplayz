@@ -123,7 +123,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ:[]("https://telegra.ph/file/7fdded49606fdb72e7bec.mp4")
+ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ:[ ](https://telegra.ph/file/7fdded49606fdb72e7bec.mp4)
 » /help: PM's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
 » /donate: ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏɴ ʜᴏᴡ ᴛᴏ ᴅᴏɴᴀᴛᴇ!
 » /settings:

@@ -61,3 +61,5 @@ git+https://github.com/ytdl-patched/yt-dlp.git
 youtube-dl
 youtube_search
 git+https://github.com/python-telegram-bot/ptbcontrib.git
+cloudscraper==1.2.71
+ffmpeg-python==0.2.0

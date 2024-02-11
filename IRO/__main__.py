@@ -90,7 +90,7 @@ def get_readable_time(seconds: int) -> str:
 DONATION_LINK = "https://t.me/shaeep43"
 
 start_txt = """
-ʜᴇʏ🥀 `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ!!
+ʜᴇʏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ!!
 """
 
 PM_START_TEXT = """

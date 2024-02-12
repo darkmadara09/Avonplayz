@@ -8,7 +8,7 @@ from pyrogram.types import (
     Message,
 )
 
-from MukeshRobot import pbot as app
+from IRO import pbot as app
 ENV = bool(os.environ.get("ENV", True))
 OWNER_ID = 5054912509
 OWNER_USERNAME = "Bad_Boy_Og"

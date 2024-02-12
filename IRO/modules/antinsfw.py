@@ -5,7 +5,7 @@ from pyrogram import filters
 from IRO import pbot, arq, BOT_USERNAME as bn
 from IRO.utils.errors import capture_err
 from IRO.utils.permissions import adminsOnly
-from IRO.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
+from IRO.services.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 
 __mod_name__ = "Anti-NSFW​"
 

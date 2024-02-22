@@ -47,15 +47,15 @@ async def reqgban(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/e1d0c97f264d6bee9a15a.jpg"
+    thumb = "https://telegra.ph/file/f3c0a3c5db86ee9ba7220.jpg"
     
     bug_report = f"""
-**#GbanReq : ** **@{OWNER_USERNAME}**
-**From User : ** **{mention}**
-**User ID : ** **{user_id}**
-**Group : ** **{chat_username}**
-**Gban Target : ** **{bugs}**
-**Event Stamp : ** **{datetimes}**"""
+**ɢʙᴀɴ ʀᴇǫᴜᴇsᴛ : ** **@{OWNER_USERNAME}**
+**ғʀᴏᴍ ᴜsᴇʀ : ** **{mention}**
+**ᴜsᴇʀ ɪᴅ : ** **{user_id}**
+**ɢʀᴏᴜᴘ : ** **{chat_username}**
+**ɢʙᴀɴ ᴛᴀʀɢᴇᴛ : ** **{bugs}**
+**ᴇᴠᴇɴᴛ sᴛᴀᴍᴘ : ** **{datetimes}**"""
 
     
     if msg.chat.type == "private":

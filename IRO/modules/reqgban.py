@@ -75,8 +75,8 @@ async def reqgban(_, msg: Message):
     elif user_id != OWNER_ID:
         if bugs:
             await msg.reply_text(
-                f"<b>Gban Request : {bugs}</b>\n\n"
-                "<b>The gban was successfully requested to the support group!</b>",
+                f"<b>ɢʙᴀɴ ʀᴇǫᴜᴇsᴛ : {bugs}</b>\n\n"
+                "<b>ᴛʜᴇ ɢʙᴀɴ ᴡᴀs sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛᴏ ᴛʜᴇ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ.</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [

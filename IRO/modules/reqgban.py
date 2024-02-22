@@ -122,3 +122,12 @@ async def close_send_photo(_, CallbackQuery):
         )
     else:
         await CallbackQuery.message.delete()
+
+__help__ = """
+» /reqgban : ʏᴏᴜ ᴄᴀɴ ʀᴇǫᴜᴇsᴛ ᴜs ᴛᴏ ɢʙᴀɴ.
+"""
+
+__mod_name__ = "REQGBAN"
+REQGBAN_HANDLER = DisableAbleCommandHandler("reqgban", reqgban, run_async=True)
+
+dispatcher.add_handler(REQGBAN_HANDLER)

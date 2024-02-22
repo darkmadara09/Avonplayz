@@ -1,6 +1,7 @@
 from datetime import datetime
 import os
 from IRO.modules.disable import DisableAbleCommandHandler
+from IRO import dispatcher
 from pyrogram import filters
 from pyrogram.types import (
     InlineKeyboardButton,

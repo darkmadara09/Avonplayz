@@ -109,15 +109,11 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
-    ],
-    [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="IRO_"),
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"),
     ],
     [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
 ]
 
@@ -438,14 +434,14 @@ def IRO_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"),
-        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/ZENITSU_SHADOW"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Dazai_ixbot"),
                  ],
                  [
         InlineKeyboardButton(text="", url=f"yumiko_source"),
                  ],
                  [
-                    InlineKeyboardButton(text="◁", callback_data="IRO_back"),
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="IRO_back"),
                  ]
                 ]
             ),

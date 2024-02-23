@@ -14,7 +14,7 @@ from IRO import pbot as app
 ENV = bool(os.environ.get("ENV", True))
 OWNER_ID = 5054912509
 OWNER_USERNAME = "Bad_Boy_Og"
-LOG_CHANNEL = -1002126877803
+LOG_CHANNEL = -1002117701544
 
 from IRO.utils.errors import capture_err
 

@@ -1,7 +1,7 @@
 from telethon import Button
 
-from MukeshRobot import telethn
-from MukeshRobot.events import register
+from IRO import telethn
+from IRO.events import register
 
 PHOTO = "https://telegra.ph/file/1b57ea5abf2f600370b01.mp4"
 

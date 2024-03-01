@@ -5,7 +5,7 @@ from pyrogram.types import InputMediaPhoto
 from .. import pbot as  IRO,BOT_USERNAME
 import requests
 
-@Mukesh.on_message(filters.command("imagine"))
+@IRO.on_message(filters.command("imagine"))
 async def imagine_(b, message: Message):
     if message.reply_to_message:
         text = message.reply_to_message.text
@@ -15,10 +15,10 @@ async def imagine_(b, message: Message):
     results= requests.get(f"https://mukesh-api.vercel.app/imagine/{text}").json()["results"]
 
     caption = f"""
-✦ sᴜᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ✦
+sᴜᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ 
 
-❍ **ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ➛** [Rᴇɴɢᴏᴋᴜ](https://t.me/Rengoku_ixbot)
-❍ **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➛** {message.from_user.mention}
+» ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ➛ [𝗗𝗔𝗭𝗔𝗜](https://t.me/Dazai_ixbot)
+» ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➛ {message.from_user.mention}
 """
     await m.delete()
     photos=[]
@@ -32,6 +32,6 @@ async def imagine_(b, message: Message):
 # github : noob-mukesh
 __mod_name__ = "ᴀɪ-ɪᴍᴀɢᴇ"
 __help__ = """
- ❍ /imagine ➛ ɢᴇɴᴇʀᴀᴛᴇ ᴀɪ ɪᴍᴀɢᴇ ғʀᴏᴍ ᴛᴇxᴛ
- ❍ /mahadev ➛ ɢᴇɴᴇʀᴀᴛᴇ Mᴀʜᴀᴅᴇᴠ ɪᴍᴀɢᴇ
+ » /imagine ➛ ɢᴇɴᴇʀᴀᴛᴇ ᴀɪ ɪᴍᴀɢᴇ ғʀᴏᴍ ᴛᴇxᴛ
+ » /mahadev ➛ ɢᴇɴᴇʀᴀᴛᴇ Mᴀʜᴀᴅᴇᴠ ɪᴍᴀɢᴇ
  """

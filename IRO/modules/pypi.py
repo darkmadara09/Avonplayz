@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import requests
-from DAXXMUSIC import app
+from IRO import pbot
 
 
 def get_pypi_info(package_name):
@@ -21,7 +21,7 @@ def get_pypi_info(package_name):
         print(f"Error fetching PyPI information: {e}")
         return None
 
-@app.on_message(filters.command("pypi", prefixes="/"))
+@pbot.on_message(filters.command("pypi", prefixes="/"))
 def pypi_info_command(client, message):
     try:
        

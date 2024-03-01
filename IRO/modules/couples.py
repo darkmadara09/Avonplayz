@@ -4,8 +4,8 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from MukeshRobot.utils.mongo import get_couple, save_couple
-from MukeshRobot import pbot
+from IRO.utils.mongo import get_couple, save_couple
+from IRO import pbot
 
 # <=======================================================================================================>
 

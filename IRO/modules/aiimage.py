@@ -11,8 +11,8 @@ async def imagine_(b, message: Message):
         text = message.reply_to_message.text
     else:
         text =message.text.split(None, 1)[1]
-    m =await message.reply_text( "`❍ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...,\n\n❍ ɢᴇɴᴇʀᴀᴛɪɴɢ ᴘʀᴏᴍᴘᴛ .. ...`")
-    results= requests.get(f"https://mukesh-api.vercel.app/imagine/{text}").json()["results"]
+    m =await message.reply_text( "`» ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...,\n\n» ɢᴇɴᴇʀᴀᴛɪɴɢ ᴘʀᴏᴍᴘᴛ .. ...`")
+    results= requests.get(f"https://iro-api.vercel.app/imagine/{text}").json()["results"]
 
     caption = f"""
 sᴜᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ 

@@ -52,6 +52,7 @@ search_engine_parser
 tswift
 telethon
 telegraph
+telebot 
 TgCrypto 
 wget
 wikipedia

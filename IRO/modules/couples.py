@@ -4,7 +4,7 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from IRO.utils.mongo import get_couple, save_couple
+from IRO.utils.dbfun import get_couple, save_couple
 from IRO import pbot
 
 # <=======================================================================================================>

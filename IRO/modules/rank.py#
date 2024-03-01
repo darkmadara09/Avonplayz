@@ -3,7 +3,7 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token obtained from BotFather
-bot = telebot.TeleBot('YOUR_BOT_TOKEN')
+bot = IRO.IRO('YOUR_BOT_TOKEN')
 
 # Dictionary to store message counts for each user
 message_counts = defaultdict(int)

@@ -1,4 +1,4 @@
-import IRO
+import IRO as pbot
 from collections import defaultdict
 from datetime import datetime, timedelta
 

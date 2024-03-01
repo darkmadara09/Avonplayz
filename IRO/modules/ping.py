@@ -9,7 +9,7 @@ from IRO import StartTime, dispatcher
 from IRO.modules.disable import DisableAbleCommandHandler
 from IRO.modules.helper_funcs.chat_status import sudo_plus
 
-PING_IMG = "https://telegra.ph/file/a9c346df5cd862268223a.jpg"
+PING_IMG = "https://telegra.ph/file/2e0688c1d9a1e91a642df.jpg"
 
 sites_list = {
     "Telegram": "https://api.telegram.org",

@@ -8,7 +8,7 @@ from IRO import pbot as app
 @app.on_message(filters.command("cosplay"))
 async def cosplay(_,msg):
     img = requests.get("https://waifu-api.vercel.app").json()
-    await msg.reply_photo(img, caption=f"» ᴄᴏsᴘʟᴀʏ ʙʏ ➛ ᴅᴀᴢᴀɪ\n\n» ᴄʀᴇᴅɪᴛs ʙʏ ➛ ᴅᴀᴢᴀɪ")
+    await msg.reply_photo(img, caption=f"» ᴄᴏsᴘʟᴀʏ ʙʏ ➛ ᴅᴀᴢᴀɪ\n\n» ᴄʀᴇᴅɪᴛs ʙʏ ➛ ɪx sᴜᴘᴘᴏʀᴛ")
 
 @app.on_message(filters.command("ncosplay"))
 async def ncosplay(_,msg):

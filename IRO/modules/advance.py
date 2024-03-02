@@ -49,7 +49,7 @@ async def _(event):
 
     is_admin = False
     try:
-        IRO = await telethn(GetParticipantRequest(event.chat_id, event.sender_id))
+        iro = await telethn(GetParticipantRequest(event.chat_id, event.sender_id))
     except UserNotParticipantError:
         is_admin = False
     else:
@@ -102,7 +102,7 @@ async def _(event):
 
     is_admin = False
     try:
-        IRO = await telethn(GetParticipantRequest(event.chat_id, event.sender_id))
+        iro = await telethn(GetParticipantRequest(event.chat_id, event.sender_id))
     except UserNotParticipantError:
         is_admin = False
     else:
@@ -183,11 +183,11 @@ async def get_users(show):
 
 __mod_name__ = "ᴀᴅᴠᴀɴᴄᴇ"
 __help__ = """
-❍ /unbanall ➛ ᴜɴʙᴀɴ ᴀʟʟ ᴍᴀᴍʙᴇʀ 
+» /unbanall ➛ ᴜɴʙᴀɴ ᴀʟʟ ᴍᴀᴍʙᴇʀ 
 
-❍ /unmuteall ➛ ᴜɴᴍᴜᴛᴇ ᴀʟʟ ᴍᴀᴍʙᴇʀ
+» /unmuteall ➛ ᴜɴᴍᴜᴛᴇ ᴀʟʟ ᴍᴀᴍʙᴇʀ
 
-❍ /users ➛ ɢᴇᴛ ɢʀᴏᴜᴘ ᴜsᴇʀs ʟɪsᴛ
+» /users ➛ ɢᴇᴛ ɢʀᴏᴜᴘ ᴜsᴇʀs ʟɪsᴛ
 
 """
         

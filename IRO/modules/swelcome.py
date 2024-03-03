@@ -1,5 +1,7 @@
 import os
 import random
+from IRO.modules.disable import DisableAbleCommandHandler
+from IRO import dispatcher
 from unidecode import unidecode
 from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
@@ -151,7 +153,11 @@ USERNAME: @{message.chat.username}
 ➖➖➖➖➖➖➖➖➖➖➖➖**
 """)
 
-__mod__ = "WELCOME"
 __help__ = """
-» /swelcome : Turn On The Special Welcome For Groups
+» /swelcome : ᴛᴜʀɴ ᴏɴ ᴛʜᴇ sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ ғᴏʀ ɢʀᴏᴜᴘs
 """
+
+__mod_name__ = "swelcome"
+REQGBAN_HANDLER = DisableAbleCommandHandler("swelcome", swelcome, run_async=True)
+
+dispatcher.add_handler(SWELCOME_HANDLER)

@@ -1,22 +1,14 @@
-
 from pyrogram import filters
 from pyrogram.types import Message
+from IRO.database.pretenderdb import impo_off, impo_on, check_pretender, add_userdata, get_userdata, usr_data
+from IRO import pbot
 
-from IRO.utils.imposter_db import (
-    add_userdata,
-    usr_data,
-    get_userdata,
-    check_imposter,
-    impo_on,
-    impo_off,
-)
-from HuTao import app
-from HuTao.Config import COMMAND_HANDLER
-from HuTao.helpers.status import user_admin
 
-@app.on_message(filters.group & ~filters.bot & ~filters.via_bot, group=1)
+
+
+@pbot.on_message(filters.group & ~filters.bot & ~filters.via_bot, group=69)
 async def chk_usr(_, message: Message):
-    if message.sender_chat or not await check_imposter(message.chat.id):
+    if message.sender_chat or not await check_pretender(message.chat.id):
         return
     if not await usr_data(message.from_user.id):
         return await add_userdata(
@@ -33,11 +25,11 @@ async def chk_usr(_, message: Message):
         or lastname_before != message.from_user.last_name
     ):
         msg += f"""
-🔹 IMPOSTER DETECTED 👀:
-➖➖➖➖➖➖➖➖➖➖➖➖
-▪️User: {message.from_user.mention}
-▪️ID: {message.from_user.id}
-➖➖➖➖➖➖➖➖➖➖➖➖\n
+**ɪᴍᴘᴏsᴛᴇʀ ᴅᴇᴛᴇᴄᴛᴇᴅ**
+──────────────
+**ɴᴀᴍᴇ** ➠ {message.from_user.mention}
+**ᴜsᴇʀ ɪᴅ** ➠ {message.from_user.id}
+──────────────\n
 """
     if usernamebefore != message.from_user.username:
         usernamebefore = f"@{usernamebefore}" if usernamebefore else "NO USERNAME"
@@ -47,11 +39,11 @@ async def chk_usr(_, message: Message):
             else "NO USERNAME"
         )
         msg += """
-🔹CHANGED USERNAME:
-➖➖➖➖➖➖➖➖➖➖➖➖
-▪️FROM: {bef}
-▪️TO: {aft}
-➖➖➖➖➖➖➖➖➖➖➖➖\n
+** ᴄʜᴀɴɢᴇᴅ ᴜsᴇʀɴᴀᴍᴇ **
+──────────────
+**ғʀᴏᴍ** ➠ {bef}
+**ᴛᴏ** ➠ {aft}
+──────────────\n
 """.format(bef=usernamebefore, aft=usernameafter)
         await add_userdata(
             message.from_user.id,
@@ -61,11 +53,11 @@ async def chk_usr(_, message: Message):
         )
     if first_name != message.from_user.first_name:
         msg += """
-🔹CHANGED FIRST NAME:
-➖➖➖➖➖➖➖➖➖➖➖➖
-▪️FROM: {bef}
-▪️TO: {aft}
-➖➖➖➖➖➖➖➖➖➖➖➖\n
+** ᴄʜᴀɴɢᴇs ғɪʀsᴛ ɴᴀᴍᴇ **
+──────────────
+**ғʀᴏᴍ** ➠ {bef}
+**ᴛᴏ** ➠ {aft}
+──────────────\n
 """.format(
             bef=first_name, aft=message.from_user.first_name
         )
@@ -79,11 +71,11 @@ async def chk_usr(_, message: Message):
         lastname_before = lastname_before or "NO LAST NAME"
         lastname_after = message.from_user.last_name or "NO LAST NAME"
         msg += """
-🔹CHANGED LAST NAME:
-➖➖➖➖➖➖➖➖➖➖➖➖
-▪️FROM: {bef}
-▪️TO: {aft}
-➖➖➖➖➖➖➖➖➖➖➖➖\n
+** ᴄʜᴀɴɢᴇs ʟᴀsᴛ ɴᴀᴍᴇ **
+──────────────
+**ғʀᴏᴍ** ➠ {bef}
+**ᴛᴏ** ➠ {aft}
+──────────────\n
 """.format(
             bef=lastname_before, aft=lastname_after
         )
@@ -94,34 +86,26 @@ async def chk_usr(_, message: Message):
             message.from_user.last_name,
         )
     if msg != "":
-        await message.reply_photo("https://graph.org//file/a5f944533dcaccfaf2567.jpg", caption=msg)
+        await message.reply_photo("https://graph.org/file/50648d0ef99b64c865092.jpg", caption=msg)
 
 
-@app.on_message(filters.group & filters.command("imposter", COMMAND_HANDLER) & ~filters.bot & ~filters.via_bot)
-@user_admin
+@pbot.on_message(filters.group & filters.command("imposter") & ~filters.bot & ~filters.via_bot)
 async def set_mataa(_, message: Message):
     if len(message.command) == 1:
-        return await message.reply("Check help Section For Getting Help")
-    if message.command[1] == "on":
+        return await message.reply("**ᴅᴇᴛᴇᴄᴛ ᴘʀᴇᴛᴇɴᴅᴇʀ ᴜsᴇʀs ᴜsᴀɢᴇ : ᴘʀᴇᴛᴇɴᴅᴇʀ ᴏɴ|ᴏғғ**")
+    if message.command[1] == "enable":
         cekset = await impo_on(message.chat.id)
         if cekset:
-            await message.reply("Imposter Mode Is Already Enabled")
+            await message.reply("**ᴘʀᴇᴛᴇɴᴅᴇʀ ᴍᴏᴅᴇ ɪs ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ.**")
         else:
             await impo_on(message.chat.id)
-            await message.reply(f"Successfully Enabled Imposter Mode For {message.chat.title}")
-    elif message.command[1] == "off":
+            await message.reply(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴇɴᴀʙʟᴇᴅ ᴘʀᴇᴛᴇɴᴅᴇʀ ᴍᴏᴅᴇ ғᴏʀ** {message.chat.title}")
+    elif message.command[1] == "disable":
         cekset = await impo_off(message.chat.id)
         if not cekset:
-            await message.reply("Imposter Mode Is Already Disabled")
+            await message.reply("**ᴘʀᴇᴛᴇɴᴅᴇʀ ᴍᴏᴅᴇ ɪs ᴀʟʀᴇᴀᴅʏ ᴅɪsᴀʙʟᴇᴅ.**")
         else:
             await impo_off(message.chat.id)
-            await message.reply(f"Successfully Enabled Imposter Mode For {message.chat.title}")
+            await message.reply(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴅɪsᴀʙʟᴇᴅ ᴘʀᴇᴛᴇɴᴅᴇʀ ᴍᴏᴅᴇ ғᴏʀ** {message.chat.title}")
     else:
-        await message.reply("Check help Section For Getting Help")
-
-
-
-__mod__ = "IMPOSTER"
-__help__ = """
-**» /imposter on/off** - Turn On The Watcher For Your Group Which Notifies About User Who Change Name or Username
-"""
+        await message.reply("**ᴅᴇᴛᴇᴄᴛ ᴘʀᴇᴛᴇɴᴅᴇʀ ᴜsᴇʀs ᴜsᴀɢᴇ : ᴘʀᴇᴛᴇɴᴅᴇʀ ᴏɴ|ᴏғғ**")

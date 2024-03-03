@@ -158,6 +158,6 @@ __help__ = """
 """
 
 __mod_name__ = "swelcome"
-REQGBAN_HANDLER = DisableAbleCommandHandler("swelcome", swelcome, run_async=True)
+SWELCOME_HANDLER = DisableAbleCommandHandler("swelcome", swelcome, run_async=True)
 
 dispatcher.add_handler(SWELCOME_HANDLER)

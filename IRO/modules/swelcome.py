@@ -152,12 +152,9 @@ ID: {message.chat.id}
 USERNAME: @{message.chat.username}
 ➖➖➖➖➖➖➖➖➖➖➖➖**
 """)
+            
+__mod_name__ = "SWELCOME"
 
 __help__ = """
 » /swelcome : ᴛᴜʀɴ ᴏɴ ᴛʜᴇ sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ ғᴏʀ ɢʀᴏᴜᴘs
 """
-
-__mod_name__ = "SWELCOME"
-SWELCOME_HANDLER = DisableAbleCommandHandler("swelcome", swelcome, run_async=True)
-
-dispatcher.add_handler(SWELCOME_HANDLER)

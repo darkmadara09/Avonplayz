@@ -1,4 +1,4 @@
-from MukeshRobot import aiohttpsession as session
+from IRO import aiohttpsession as session
 
 
 async def post(url: str, *args, **kwargs):

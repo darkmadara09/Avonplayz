@@ -3,7 +3,7 @@
 
 from async_pymongo import AsyncClient
 
-from IRO.config import MONGO_DB_URI
+from IRO import MONGO_DB_URI
 
 DBNAME = "IRO"
 

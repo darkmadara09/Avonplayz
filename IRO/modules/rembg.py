@@ -1,98 +1,62 @@
-import io
 import os
-from datetime import datetime
+import aiohttp
+import aiofiles
+from aiohttp import ContentTypeError
+from IRO import pbot as app
+from pyrogram import filters
 
-import requests
-from telethon import types
-from telethon.tl import functions
+def check_filename(filroid):
+    if os.path.exists(filroid):
+        no = 1
+        while True:
+            ult = "{0}_{2}{1}".format(*os.path.splitext(filroid) + (no,))
+            if os.path.exists(ult):
+                no += 1
+            else:
+                return ult
+    return filroid
 
-from IRO import REM_BG_API_KEY
-from IRO.events import register
-from IRO import telethn as tbot
+async def RemoveBG(input_file_name):
+    headers = {"X-API-Key": "u4x2416NAQVefYsfwbzrw7VE"}
+    files = {"image_file": open(input_file_name, "rb").read()}
+    async with aiohttp.ClientSession() as ses:
+        async with ses.post(
+            "https://api.remove.bg/v1.0/removebg", headers=headers, data=files
+        ) as y:
+            contentType = y.headers.get("content-type")
+            if "image" not in contentType:
+                return False, (await y.json())
 
-REM_BG_API_KEY = "REM_BG_API_KEY"
-TEMP_DOWNLOAD_DIRECTORY = "./"
-
-
-async def is_register_admin(chat, user):
-    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
-        return isinstance(
-            (
-                await tbot(functions.channels.GetParticipantRequest(chat, user))
-            ).participant,
-            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
-        )
-    if isinstance(chat, types.InputPeerUser):
-        return True
-
-
-@register(pattern="^/rmbg")
-async def _(event):
-    HELP_STR = "ᴜꜱᴇ `/rmbg` ᴀꜱ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ ʙᴀʙʏ🥀"
-    if event.fwd_from:
-        return
-    if event.is_group:
-        if await is_register_admin(event.input_chat, event.message.sender_id):
-            pass
-        else:
-            return
-    if REM_BG_API_KEY is None:
-        await event.reply("`ʏᴏᴜ ɴᴇᴇᴅ ᴀᴘɪ ᴛᴏᴋᴇɴ ꜰʀᴏᴍ remove.bg ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴘʟᴜɢɪɴ ʙᴀʙʏ🥀.`")
-        return False
-    start = datetime.now()
-    message_id = event.message.id
-    if event.reply_to_msg_id:
-        message_id = event.reply_to_msg_id
-        reply_message = await event.get_reply_message()
-        await event.reply("`ᴘʀᴏᴄᴇꜱꜱɪɴɢ ʙᴀʙʏ🥀...`")
-        try:
-            downloaded_file_name = await tbot.download_media(
-                reply_message, TEMP_DOWNLOAD_DIRECTORY
-            )
-        except Exception as e:
-            await event.reply(str(e))
-            return
-        else:
-            output_file_name = ReTrieveFile(downloaded_file_name)
-            os.remove(downloaded_file_name)
-    else:
-        await event.reply(HELP_STR)
-        return
-    contentType = output_file_name.headers.get("content-type")
-    if "image" in contentType:
-        with io.BytesIO(output_file_name.content) as remove_bg_image:
-            remove_bg_image.name = "rmbg.png"
-            await tbot.send_file(
-                event.chat_id,
-                remove_bg_image,
-                force_document=True,
-                supports_streaming=False,
-                allow_cache=False,
-                reply_to=message_id,
-            )
-        end = datetime.now()
-        ms = (end - start).seconds
-        await event.reply("ʙᴀᴄᴋɢʀᴏᴜɴᴅ ʀᴇᴍᴏᴠᴇᴅ ɪɴ {} ꜱᴇᴄᴏɴᴅꜱ ʙᴀʙʏ🥀".format(ms))
-    else:
-        await event.reply(
-            "remove.bg ᴀᴘɪ ʀᴇᴛᴜʀɴᴇᴅ ᴇʀʀᴏʀꜱ. ᴘʟᴇᴀꜱᴇ ʀᴇᴘᴏʀᴛ ᴛᴏ @IRO_AF\n`{} ʙᴀʙʏ🥀".format(
-                output_file_name.content.decode("UTF-8")
-            )
-        )
+            name = check_filename("alpha.png")
+            file = await aiofiles.open(name, "wb")
+            await file.write(await y.read())
+            await file.close()
+            return True, name
 
 
-def ReTrieveFile(input_file_name):
-    headers = {
-        "X-API-Key": REM_BG_API_KEY,
-    }
-    files = {
-        "image_file": (input_file_name, open(input_file_name, "rb")),
-    }
-    r = requests.post(
-        "https://api.remove.bg/v1.0/removebg",
-        headers=headers,
-        files=files,
-        allow_redirects=True,
-        stream=True,
-    )
-    return r
+@app.on_message(filters.command("rmbg"))
+async def rmbg(bot, message):
+  rmbg = await message.reply("💥") 
+  replied = message.reply_to_message
+  if not replied:
+      return await rmbg.edit("**❍ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ʀᴇᴍᴏᴠᴇ ɪᴛ's ʙᴀᴄᴋɢʀᴏᴜᴅ.**")
+
+  if replied.photo:
+      photo = await bot.download_media(replied)
+      x, y = await RemoveBG(photo)
+      os.remove(photo)
+      if not x:
+          bruh = y["errors"][0]
+          details = bruh.get("detail", "")
+          return await rmbg.edit(f"**❍ ᴇʀʀᴏʀ ~** `{bruh['title']}`,\n❍ {details}")
+      await message.reply_photo(photo=y,caption="**❍ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ɪᴍᴀɢᴇ ᴡɪᴛʜᴏᴜᴛ ʙᴀᴄᴋɢʀᴏᴜɴᴅ.**")
+      await message.reply_document(document=y)
+      await rmbg.delete()
+      return os.remove(y)
+  await rmbg.edit("**❍ ʀᴇᴘʟʏ ᴏɴʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ʀᴇᴍᴏᴠᴇ ɪᴛ's ʙᴀᴄᴋɢʀᴏᴜɴᴅ.**")
+
+__mod_name__ = "ʙɢʀᴍ"
+__help__ = """
+ » /rmbg ➛ ʀᴇᴘʟʏ ᴏɴʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ʀᴇᴍᴏᴠᴇ ɪᴛ's ʙᴀᴄᴋɢʀᴏᴜɴᴅ.
+ """
+ 

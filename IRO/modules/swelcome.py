@@ -157,7 +157,7 @@ __help__ = """
 » /swelcome : ᴛᴜʀɴ ᴏɴ ᴛʜᴇ sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ ғᴏʀ ɢʀᴏᴜᴘs
 """
 
-__mod_name__ = "swelcome"
+__mod_name__ = "SWELCOME"
 SWELCOME_HANDLER = DisableAbleCommandHandler("swelcome", swelcome, run_async=True)
 
 dispatcher.add_handler(SWELCOME_HANDLER)

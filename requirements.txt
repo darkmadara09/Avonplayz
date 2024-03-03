@@ -68,3 +68,4 @@ faker
 pyfiglet
 async_pymongo
 PyDictionary
+unidecode 

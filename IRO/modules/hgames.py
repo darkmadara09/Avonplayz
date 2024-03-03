@@ -2,6 +2,8 @@ import random
 
 from telethon import Button, events
 
+from .. import telethn as asst
+
 BUTTON = [[Button.url("ꜱᴜᴘᴘᴏʀᴛ", f"https://t.me/IxSupport")]]
 HOT = "https://telegra.ph/file/daad931db960ea40c0fca.gif"
 SMEXY = "https://telegra.ph/file/a23e9fd851fb6bc771686.gif"

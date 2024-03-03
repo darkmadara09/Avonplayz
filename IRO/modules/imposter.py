@@ -110,9 +110,8 @@ async def set_mataa(_, message: Message):
     else:
         await message.reply("**ᴅᴇᴛᴇᴄᴛ ᴘʀᴇᴛᴇɴᴅᴇʀ ᴜsᴇʀs ᴜsᴀɢᴇ : ᴘʀᴇᴛᴇɴᴅᴇʀ ᴏɴ|ᴏғғ**")
 
+__mod_name__ = "Iᴍᴘᴏsᴛᴇʀ"
 
-
-__mod__ = "IMPOSTER"
 __help__ = """
-**» /imposter on/off** - Turn On The Watcher For Your Group Which Notifies About User Who Change Name or Username
+» /imposter enable/disable : ᴛᴜʀɴ ᴏɴ ᴛʜᴇ ᴡᴀᴛᴄʜᴇʀ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡʜɪᴄʜ ɴᴏᴛɪғɪᴇs ᴀʙᴏᴜᴛ ᴜsᴇʀ ᴡʜᴏ ᴄʜᴀɴɢᴇ ɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɴᴀᴍᴇ
 """

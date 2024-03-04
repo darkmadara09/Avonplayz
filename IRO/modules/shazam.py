@@ -37,7 +37,7 @@ from pyrogram.types import Message
 from json import JSONDecodeError
 
 from IRO.utils.pluginhelper import admins_only, edit_or_reply, fetch_audio
-from IRO import MONGO_DB_URL, SUPPORT_CHAT
+from IRO import MONGO_DB_URI , SUPPORT_CHAT
 
 
 @pgram.on_message(

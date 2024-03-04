@@ -37,10 +37,10 @@ from pyrogram.types import Message
 from json import JSONDecodeError
 
 from IRO.utils.pluginhelper import admins_only, edit_or_reply, fetch_audio
-from IRO import MONGO_DB_URI , SUPPORT_CHAT
+from IRO import pbot, MONGO_DB_URI, SUPPORT_CHAT
 
 
-@pgram.on_message(
+@pbot.on_message(
     filters.command(["identify", "shazam", "shazam@Cutiepii_Robot"]))
 @admins_only
 async def shazamm(client: Client, message: Message):
@@ -77,8 +77,8 @@ async def shazamm(client: Client, message: Message):
     messageo = f"""<b>Song Shazamed.</b>
 <b>Song Name : </b>{title}
 <b>Song By : </b>{by}
-<u><b>Identified Using @Cutiepii_Robot - Join our support @{SUPPORT_CHAT}</b></u>
-<i>Powered by @Yuki_Netowrk</i>
+<u><b>Identified Using @dazai_ixbot - Join our support @{SUPPORT_CHAT}</b></u>
+<i>Powered by @ix_updates</i>
 """
     await client.send_photo(message.chat.id,
                             image,

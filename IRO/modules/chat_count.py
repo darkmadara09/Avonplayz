@@ -1,6 +1,6 @@
 import os
 
-from IRO import pbot, MONGO_DB_URl
+from IRO import pbot, MONGO_DB_URI
 from telegram import *
 from pyrogram import Client , filters
 from pyrogram.types import Chat, Message, User

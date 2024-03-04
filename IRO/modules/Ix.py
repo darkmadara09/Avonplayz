@@ -34,7 +34,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from IRO import NETWORK_USERNAME, dispatcher
+from IRO import UPDATES_CHANNEL, dispatcher
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMode
 
 from telegram.ext import (
@@ -45,7 +45,7 @@ from telegram.ext import (
 PHOTO = "https://telegra.ph/file/faa3bfd69035c1c7b7341.jpg"
 
 
-if NETWORK_USERNAME == "Ix_updates":
+if UPDATES_CHANNEL == "Ix_updates":
     def void(update: Update, context: CallbackContext):
 
         TEXT = f"Wᴇʟᴄᴏᴍᴇ Tᴏ **[IX UPDATES](https://t.me/ix_updates)** \n\n◈ Ix ɪs ᴀɴ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ Cᴏᴍᴍᴜɴɪᴛʏ ᴡɪᴛʜ ᴀ ᴍᴏᴛɪᴠᴇ ᴛᴏ sᴘʀᴇᴀᴅ ʟᴏᴠᴇ ᴀɴᴅ ᴘᴇᴀᴄᴇ ᴀʀᴏᴜɴᴅ ᴛᴇʟᴇɢʀᴀᴍ. Gᴏ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ Jᴏɪɴ ᴛʜᴇ Cᴏᴍᴍᴜɴɪᴛʏ ɪғ ɪᴛ ᴅʀᴀᴡs ʏᴏᴜʀ ᴀᴛᴛᴇɴᴛɪᴏɴ."

@@ -46,7 +46,7 @@ PHOTO = "https://telegra.ph/file/faa3bfd69035c1c7b7341.jpg"
 
 
 if UPDATES_CHANNEL == "Ix_updates":
-    def void(update: Update, context: CallbackContext):
+    def ix(update: Update, context: CallbackContext):
 
         TEXT = f"Wᴇʟᴄᴏᴍᴇ Tᴏ **[IX UPDATES](https://t.me/ix_updates)** \n\n◈ Ix ɪs ᴀɴ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ Cᴏᴍᴍᴜɴɪᴛʏ ᴡɪᴛʜ ᴀ ᴍᴏᴛɪᴠᴇ ᴛᴏ sᴘʀᴇᴀᴅ ʟᴏᴠᴇ ᴀɴᴅ ᴘᴇᴀᴄᴇ ᴀʀᴏᴜɴᴅ ᴛᴇʟᴇɢʀᴀᴍ. Gᴏ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ Jᴏɪɴ ᴛʜᴇ Cᴏᴍᴍᴜɴɪᴛʏ ɪғ ɪᴛ ᴅʀᴀᴡs ʏᴏᴜʀ ᴀᴛᴛᴇɴᴛɪᴏɴ."
 

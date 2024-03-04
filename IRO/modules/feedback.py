@@ -31,7 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import random
 
-from telegram.constants import ParseMode
+from telegram import ParseMode
 from telethon import Button
 
 from IRO import OWNER_ID, SUPPORT_CHAT

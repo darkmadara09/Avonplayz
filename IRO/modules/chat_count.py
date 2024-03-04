@@ -48,7 +48,7 @@ async def levelsystem(_, message):
 
 @pbot.on_message(
     (filters.document
-     | filters.TEXT     | filters.photo
+     | filters.text   | filters.photo
      | filters.sticker
      | filters.animation
      | filters.video)

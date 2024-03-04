@@ -1,6 +1,6 @@
 import os
 
-from IRO import pgram, MONGO_DB_URl
+from IRO import pbot, MONGO_DB_URl
 from telegram import *
 from pyrogram import Client , filters
 from pyrogram.types import Chat, Message, User
@@ -21,7 +21,7 @@ levelnum = [2,5,15,25,35,50,70,100]
 
 
 
-@pgram.on_message(
+@pbot.on_message(
     filters.command("level", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def levelsystem(_, message): 
@@ -46,7 +46,7 @@ async def levelsystem(_, message):
         await update.effective_message.reply_text("Level System Disable")
 
 
-@pgram.on_message(
+@pbot.on_message(
     (filters.document
      | filters.TEXT     | filters.photo
      | filters.sticker
@@ -93,7 +93,7 @@ async def level(client: Client, message: Message):
                   
 
                                
-@pgram.on_message(
+@pbot.on_message(
     filters.command("rank", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def rank(client: Client, message: Message):

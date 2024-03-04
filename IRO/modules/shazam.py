@@ -44,9 +44,9 @@ from IRO import pbot, MONGO_DB_URI, SUPPORT_CHAT
     filters.command(["identify", "shazam", "shazam@Cutiepii_Robot"]))
 @admins_only
 async def shazamm(client: Client, message: Message):
-    kek = await edit_or_reply(message, "`Shazaming In Progress!`")
+    kk = await edit_or_reply(message, "Shazaming In Progress!")
     if not message.reply_to_message:
-        await kek.edit("Reply To The Audio.")
+        await kk.edit("Reply To The Audio.")
         return
     if os.path.exists("friday.mp3"):
         os.remove("friday.mp3")
@@ -59,11 +59,11 @@ async def shazamm(client: Client, message: Message):
     try:
         xo = r.json()
     except JSONDecodeError:
-        await kek.edit(
+        await kk.edit(
             "`Seems Like Our Server Has Some Issues, Please Try Again Later!`")
         return
     if xo.get("success") is False:
-        await kek.edit("`Song Not Found In Database. Please Try Again.`")
+        await kk.edit("`Song Not Found In Database. Please Try Again.`")
         os.remove(downloaded_file_name)
         return
     xoo = xo.get("response")
@@ -85,4 +85,4 @@ async def shazamm(client: Client, message: Message):
                             messageo,
                             parse_mode="HTML")
     os.remove(downloaded_file_name)
-    await kek.delete()
+    await kk.delete()

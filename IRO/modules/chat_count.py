@@ -123,3 +123,9 @@ async def rank(client: Client, message: Message):
             if xpnum["level"] == k["level"]:
                 break                     
         await message.reply_text(f"{message.from_user.mention} Level Info:\nLevel: {l}\nProgess: {xp}/{int(200 *((1/2) * l))}\n Ranking: {r}")
+
+__mod_name__ = "Rᴀɴᴋ"
+__help__ = """
+» /rank : ᴄʜᴇᴄᴋ ʏᴏᴜ ʀᴀɴᴋ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
+» /level : ᴄʜᴇᴄᴋ ʏᴏᴜ ʟᴇᴠᴇʟ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
+ """

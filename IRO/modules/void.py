@@ -1,77 +1,29 @@
-"""
-STATUS: Code is working. ✅
-"""
+import random
 
-"""
-BSD 2-Clause License
+from IRO import dispatcher
+from IRO import telethn as tbot
+from IRO.events import register
 
-Copyright (C) 2022, SOME-1HING [https://github.com/SOME-1HING]
-
-Credits: 
-    Void [https://github.com/Voidxtoxic/]
-
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-"""
-
-from IRO import NETWORK_USERNAME, dispatcher
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMode
-
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-)
-
-PHOTO = "https://telegra.ph/file/f9b0895ae78578fda9202.jpg"
+PHOTO = [
+    "https://telegra.ph/file/293a1b0ffe0c24dfc2af3.jpg",
+    "https://telegra.ph/file/293a1b0ffe0c24dfc2af3.jpg",
+]
 
 
-if NETWORK_USERNAME == "VoidxNetwork":
-    def void(update: Update, context: CallbackContext):
-
-        TEXT = f"Welcome to **[【V๏ɪ፝֟𝔡】 ✧Network✧](https://t.me/voidxnetwork)** \n\n◈ Void is an anime based Community with a motive to spread love and peace around telegram. Go through the channel and join the Community if it draws your attention. ◈"
-
-        update.effective_message.reply_photo(
-            PHOTO, caption= TEXT,
-            parse_mode=ParseMode.MARKDOWN,
-
-                reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                    InlineKeyboardButton(text="【Usertag】", url="https://t.me/void_network/103"),
-                    InlineKeyboardButton(text="【Owner Sama】", url="https://t.me/voidxtoxic")
-                    ],
-                    [InlineKeyboardButton(text="【V๏ɪ፝֟𝔡】Network", url="https://t.me/voidxnetwork")]
-                ]
-            ),
-        )
+@register(pattern=("/ix"))
+async def awake(event):
+    TEXT = f"Wᴇʟᴄᴏᴍᴇ Tᴏ **[𝖨𝖷 𝖴𝖯𝖣𝖠𝖳𝖤𝖲](https://t.me/ix_updates)** \n\n Ix ɪs ᴀɴ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ Cᴏᴍᴍᴜɴɪᴛʏ ᴡɪᴛʜ ᴀ ᴍᴏᴛɪᴠᴇ ᴛᴏ sᴘʀᴇᴀᴅ ʟᴏᴠᴇ ᴀɴᴅ ᴘᴇᴀᴄᴇ ᴀʀᴏᴜɴᴅ ᴛᴇʟᴇɢʀᴀᴍ. Gᴏ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ Jᴏɪɴ ᴛʜᴇ Cᴏᴍᴍᴜɴɪᴛʏ ɪғ ɪᴛ ᴅʀᴀᴡs ʏᴏᴜʀ ᴀᴛᴛᴇɴᴛɪᴏɴ."
+    BUTTON = [
+        [
+            Button.url("Oᴡɴᴇʀ​", f"https://t.me/Bad_Boy_Og"),
+            Button.url("Sᴜᴘᴘᴏʀᴛ​", f"https://t.me/Ixsupport"),
+        ]
+        [
+            Button.url("Uᴘᴅᴀᴛᴇs​", f"https://t.me/Ix_updates"),
+    ]
+    ]
+    ran = random.choice(PHOTO)
+    await tbot.send_file(event.chat_id, ran, caption=TEXT, buttons=BUTTON)
 
 
-    void_handler = CommandHandler("void", void, run_async = True)
-    dispatcher.add_handler(void_handler)
-
-    __help__ = """
-    ──「Void Network」──                         
-    
-    ❂ /void: Get information about our community! using it in groups may create promotion so we don't support using it in groups."""
-    
-    __mod_name__ = "【ᴠᴏɪᴅ】"
+__mod_name__ = "Ix"

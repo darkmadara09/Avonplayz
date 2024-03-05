@@ -243,9 +243,9 @@ def start(update: Update, context: CallbackContext):
             lel = update.effective_message.reply_text(
                 start_txt.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
-            time.sleep(1.2)
+            time.sleep(1.1)
             lel.edit_text(f"Osᴀᴍᴜ Dᴀᴢᴀɪ Is Sᴛᴀʀᴛɪɴɢ.....")
-            time.sleep(1.2)
+            time.sleep(1.1)
             lel.delete()
             K = update.effective_message.reply_sticker(
                 f"{START_STICKER}"

@@ -19,6 +19,7 @@ class Config(object):
     OWNER_USERNAME = "shaeep43" # your telegram username
     ALLOW_CHATS = True # leave it as it is
     BOT_USERNAME = "Iro_m_bot" # your bot username get it form @botfather
+    NETWORK_USERNAME = "ix_updates"
     SUPPORT_CHAT = "iro_x_support"  # Your own group for support, do not add the @ if you dont have leave it as it is
     UPDATES_CHANNEL = "iro_bot_support"  # Your own chsnnel for support, do not add the @ if you dont have leave it as it is
     JOIN_LOGGER =  (

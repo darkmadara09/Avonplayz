@@ -1,5 +1,6 @@
 import random
 
+from telethon import Button
 from IRO import dispatcher
 from IRO import telethn as tbot
 from IRO.events import register

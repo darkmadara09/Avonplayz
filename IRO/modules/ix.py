@@ -18,10 +18,8 @@ async def awake(event):
         [
             Button.url("Oᴡɴᴇʀ​", f"https://t.me/Bad_Boy_Og"),
             Button.url("Sᴜᴘᴘᴏʀᴛ​", f"https://t.me/Ixsupport"),
-        ]
-        [
             Button.url("Uᴘᴅᴀᴛᴇs​", f"https://t.me/Ix_updates"),
-    
+        ]
     ]
     ran = random.choice(PHOTO)
     await tbot.send_file(event.chat_id, ran, caption=TEXT, buttons=BUTTON)

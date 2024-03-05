@@ -5,7 +5,7 @@ from telegram import __version__ as telever
 from telethon import Button
 from telethon import __version__ as tlhver
 
-from IRO import OWNER_USERNAME, SUPPORT_CHAT, dispatcher
+from IRO import OWNER_USERNAME, dispatcher
 from IRO import telethn as tbot
 from IRO.events import register
 

@@ -24,5 +24,7 @@ async def awake(event):
     ran = random.choice(PHOTO)
     await tbot.send_file(event.chat_id, ran, caption=TEXT, buttons=BUTTON)
 
-
 __mod_name__ = "Ix"
+__help__ = """
+ » /ix : ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪʟʟ sʜᴏᴡ ʏᴏᴜ ᴏᴜʀ ɴᴇᴛᴡᴏʀᴋ.
+ """

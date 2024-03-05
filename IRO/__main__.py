@@ -87,7 +87,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-DONATION_LINK = "https://t.me/shaeep43"
+DONATION_LINK = "https://t.me/obito_shadow"
 
 start_txt = """
 ʜᴇʏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ!!
@@ -244,7 +244,7 @@ def start(update: Update, context: CallbackContext):
                 start_txt.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(1.2)
-            lel.edit_text(f"ᴡᴀɪᴛ ʙᴀʙʏ🖤! ʟᴇᴛ ᴍᴇ ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ \nꜱᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀ❤️")
+            lel.edit_text(f"Osᴀᴍᴜ Dᴀᴢᴀɪ Is Sᴛᴀʀᴛɪɴɢ.....")
             time.sleep(1.2)
             lel.delete()
             K = update.effective_message.reply_sticker(
@@ -434,8 +434,8 @@ def IRO_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Dazai_ixbot"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/ix_updates"),
                  ],
                  [
         InlineKeyboardButton(text="", url=f"yumiko_source"),

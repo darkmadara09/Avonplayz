@@ -21,7 +21,7 @@ async def awake(event):
         ]
         [
             Button.url("Uᴘᴅᴀᴛᴇs​", f"https://t.me/Ix_updates"),
-    ]
+    
     ]
     ran = random.choice(PHOTO)
     await tbot.send_file(event.chat_id, ran, caption=TEXT, buttons=BUTTON)

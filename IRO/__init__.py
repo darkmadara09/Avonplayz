@@ -115,6 +115,7 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
+    NETWORK_USERNAME = os.environ.get("NETWORK_USERNAME", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
@@ -190,6 +191,7 @@ else:
     CASH_API_KEY = Config.CASH_API_KEY
     TIME_API_KEY = Config.TIME_API_KEY
     WALL_API = Config.WALL_API
+    NETWORK_USERNAME = Config.NETWORK_USERNAME
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API

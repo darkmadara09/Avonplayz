@@ -1,6 +1,6 @@
 import random
-from telegram import run_async, Filters
-from telegram import Message, Chat, Update, Bot, MessageEntity
+from IRO import run_async, Filters
+from IRO import Message, Chat, Update, Bot, MessageEntity
 from IRO import dispatcher
 from IRO.modules.disable import DisableAbleCommandHandler
 

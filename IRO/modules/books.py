@@ -99,4 +99,4 @@ async def _(event):
 __help__ = """
  » `/book` <book name> ➛ ɢᴇᴛ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴏғ ᴛʜᴇ ʙᴏᴏᴋ.
 """
-__mod_name__ = "ʙᴏᴏᴋs"
+__mod_name__ = "Bᴏᴏᴋs"

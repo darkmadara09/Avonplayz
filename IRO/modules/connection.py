@@ -400,7 +400,7 @@ def connect_button(update, context):
         connect_chat(update, context)
 
 
-__mod_name__ = "CONNECTION"
+__mod_name__ = "Cᴏɴɴᴇᴄᴛɪᴏɴ"
 
 __help__ = """
 ꜱᴏᴍᴇᴛɪᴍᴇꜱ, ʏᴏᴜ ᴊᴜꜱᴛ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ ꜱᴏᴍᴇ ɴᴏᴛᴇꜱ ᴀɴᴅ ꜰɪʟᴛᴇʀꜱ ᴛᴏ ᴀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ, ʙᴜᴛ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴡᴀɴᴛ ᴇᴠᴇʀʏᴏɴᴇ ᴛᴏ ꜱᴇᴇ; ᴛʜɪꜱ ɪꜱ ᴡʜᴇʀᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ ᴄᴏᴍᴇ ɪɴ...

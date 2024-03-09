@@ -162,7 +162,7 @@ __help__ = """
  » `/afk` <text> :  ɢɪᴠᴇꜱ ᴀᴜᴛᴏ ʀᴇᴘʟʏ ᴡʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴏꜰꜰʟɪɴᴇ
  » `brb` <text> :   ɢɪᴠᴇꜱ ᴀᴜᴛᴏ ʀᴇᴘʟʏ ᴡʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴏꜰꜰʟɪɴᴇ
  """
-__mod_name__ = "AFK-ᴏꜰꜰʟɪɴᴇ"
+__mod_name__ = "Aғᴋ"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),

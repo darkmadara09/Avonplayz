@@ -25,7 +25,7 @@ async def ncosplay(_,msg):
        await msg.reply_photo(ncosplay, caption=f"» ᴄᴏsᴘʟᴀʏ ʙʏ ➛ ᴅᴀᴢᴀɪ\n\n» ᴄʀᴇᴅɪᴛs ʙʏ ➛ ɪx sᴜᴘᴘᴏʀᴛ")
 
 
-mod_name = "COSPLAY"
+mod_name = "Cᴏsᴘʟᴀʏ"
 help = """
  » /cosplay ➛ ʀᴀɴᴅᴏᴍ ᴄᴏsᴘʟᴀʏ ɪᴍᴀɢᴇ.
  

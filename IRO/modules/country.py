@@ -116,4 +116,4 @@ Gathered By IRO ✨.</b>
     __help__ = """
  » `/country` <country-name> :  ɢɪᴠᴇꜱ ᴅᴇᴛᴀɪʟ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀʏ
  """
-__mod_name__ = "COUNTRY"
+__mod_name__ = "Cᴏᴜɴᴛʀʏ"

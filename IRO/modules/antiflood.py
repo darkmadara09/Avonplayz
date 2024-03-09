@@ -397,7 +397,7 @@ def __chat_settings__(chat_id, user_id):
         return "Not enforcing to flood control."
     return "ᴀɴᴛɪꜰʟᴏᴏᴅ ʜᴀꜱ ʙᴇᴇɴ ꜱᴇᴛ ᴛᴏ`{}` ʙᴀʙʏ🥀.".format(limit)
 
-__mod_name__ = "ANIT-FLOOD"
+__mod_name__ = "Aɴᴛɪ-Fʟᴏᴏᴅ"
 
 __help__ = """
 ᴀɴᴛɪꜰʟᴏᴏᴅ ᴀʟʟᴏᴡꜱ ʏᴏᴜ ᴛᴏ ᴛᴀᴋᴇ ᴀᴄᴛɪᴏɴ ᴏɴ ᴜꜱᴇʀꜱ ᴛʜᴀᴛ ꜱᴇɴᴅ ᴍᴏʀᴇ ᴛʜᴀɴ x ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴ ᴀ ʀᴏᴡ. ᴇxᴄᴇᴇᴅɪɴɢ ᴛʜᴇ ꜱᴇᴛ ꜰʟᴏᴏᴅ    will result in restricting that user.

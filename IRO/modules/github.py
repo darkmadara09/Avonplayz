@@ -4,7 +4,7 @@ from IRO import pbot
 from IRO.services.emror import capture_err
 
 
-__mod_name__ = "GITHUB"
+__mod_name__ = "Gɪᴛʜᴜʙ"
 
 __help__ = """
 

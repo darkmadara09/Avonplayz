@@ -58,4 +58,4 @@ __help__ = """
 
 """
 
-__mod_name__ = "HOWALL"
+__mod_name__ = "Wɪsʜ"

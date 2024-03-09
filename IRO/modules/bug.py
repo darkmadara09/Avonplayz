@@ -97,4 +97,4 @@ async def close_send_photo(_, CallbackQuery):
 __help__ = """
  » `/bug` <text> :  ꜰᴏʀ ʀᴇᴘᴏʀᴛɪɴɢ ᴀɴʏ ʙᴜɢ ɪɴ ʙᴏᴛ
  """
-__mod_name__ = "BUG"
+__mod_name__ = "Bᴜɢ"

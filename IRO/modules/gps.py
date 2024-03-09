@@ -39,4 +39,4 @@ __help__ = """
  » /gps <location>*:* ɢᴇᴛꜱ ʏᴏᴜ ʏᴏᴜʀ ᴅᴇꜱɪʀᴇᴅ ʟᴏᴄᴀᴛɪᴏɴ.
 """
 
-__mod_name__ = "GPS"
+__mod_name__ = "Gᴘs"

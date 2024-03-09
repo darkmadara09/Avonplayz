@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pymongo import MongoClient
-from DAXXMUSIC import app
-from config import MONGO_DB_URI
+from IRO import pbot
+from IRO import MONGO_DB_URI
 from pyrogram.types import *
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
@@ -54,7 +54,7 @@ MISHI = [
 
 #watcher
 
-@app.on_message(filters.group & filters.group, group=6)
+@pbot.on_message(filters.group & filters.group, group=6)
 def today_watcher(_, message):
     chat_id = message.chat.id
     user_id = message.from_user.id
@@ -69,7 +69,7 @@ def today_watcher(_, message):
             today[chat_id][user_id]["total_messages"] = 1
 
 
-@app.on_message(filters.group & filters.group, group=11)
+@pbot.on_message(filters.group & filters.group, group=11)
 def _watcher(_, message):
     user_id = message.from_user.id    
     user_data.setdefault(user_id, {}).setdefault("total_messages", 0)
@@ -79,7 +79,7 @@ def _watcher(_, message):
 
 # ------------------- ranks ------------------ #
 
-@app.on_message(filters.command("today"))
+@pbot.on_message(filters.command("today"))
 async def today_(_, message):
     chat_id = message.chat.id
     if chat_id in today:
@@ -107,7 +107,7 @@ async def today_(_, message):
 
 
 
-@app.on_message(filters.command("ranking"))
+@pbot.on_message(filters.command("ranking"))
 async def ranking(_, message):
     top_members = collection.find().sort("total_messages", -1).limit(10)
 
@@ -132,7 +132,7 @@ async def ranking(_, message):
 
 # -------------------- regex -------------------- # 
 
-@app.on_callback_query(filters.regex("today"))
+@pbot.on_callback_query(filters.regex("today"))
 async def today_rank(_, query):
     chat_id = query.message.chat.id
     if chat_id in today:
@@ -160,7 +160,7 @@ async def today_rank(_, query):
 
 
 
-@app.on_callback_query(filters.regex("overall"))
+@pbot.on_callback_query(filters.regex("overall"))
 async def overall_rank(_, query):
     top_members = collection.find().sort("total_messages", -1).limit(10)
 

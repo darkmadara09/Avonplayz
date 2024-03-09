@@ -79,7 +79,7 @@ __help__ = """
 ᴜꜱᴀɢᴇ: ɪᴛ ᴡɪʟʟ ꜰᴀᴋᴇ ɪᴅᴇɴᴛɪᴛʏ ꜰᴏʀ ʏᴏᴜ.
 """
 
-__mod_name__ = "IDENTITY"
+__mod_name__ = "Iᴅᴇɴᴛɪᴛʏ"
 
 FAKER_HANDLER = DisableAbleCommandHandler("fakeid", fakeid, run_async=True)
 ASTRO_HANDLER = DisableAbleCommandHandler("hs", astro, run_async=True)

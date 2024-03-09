@@ -121,5 +121,5 @@ __help__ = """
 » /couple, /couples, /shipping *:* Choose 2 users and send their names as couples in your chat.
 """
 
-__mod_name__ = "COUPLE"
+__mod_name__ = "Cᴏᴜᴘʟᴇ"
 # <================================================ END =======================================================>

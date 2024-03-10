@@ -27,6 +27,6 @@ dispatcher.add_handler(UD_HANDLER)
 __help__ = """
 » `/ud` (text) *:* ꜱᴇᴀʀᴄʜꜱ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴜʀʙᴀɴ ᴅɪᴄᴛɪᴏɴᴀʀʏ ᴀɴᴅ ꜱᴇɴᴅꜱ ʏᴏᴜ ᴛʜᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ.
 """
-__mod_name__ = "URBAN-DICTIONARY"
+__mod_name__ = "U-D"
 __command_list__ = ["ud"]
 __handlers__ = [UD_HANDLER]

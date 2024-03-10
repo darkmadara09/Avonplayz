@@ -506,7 +506,7 @@ __help__ = """
 
 """
 
-__mod_name__ = "WARNING"
+__mod_name__ = "Wᴀʀɴs"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
 RESET_WARN_HANDLER = CommandHandler(

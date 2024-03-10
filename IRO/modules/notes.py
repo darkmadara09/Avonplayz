@@ -573,7 +573,7 @@ __help__ = """
  *ɴᴏᴛᴇ:* ɴᴏᴛᴇ ɴᴀᴍᴇꜱ ᴀʀᴇ ᴄᴀꜱᴇ-ɪɴꜱᴇɴꜱɪᴛɪᴠᴇ, ᴀɴᴅ ᴛʜᴇʏ ᴀʀᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴄᴏɴᴠᴇʀᴛᴇᴅ ᴛᴏ ʟᴏᴡᴇʀᴄᴀꜱᴇ ʙᴇꜰᴏʀᴇ ɢᴇᴛᴛɪɴɢ ꜱᴀᴠᴇᴅ.
 """
 
-__mod_name__ = "NOTES"
+__mod_name__ = "Nᴏᴛᴇs"
 
 GET_HANDLER = CommandHandler("get", cmd_get, run_async=True)
 HASH_GET_HANDLER = MessageHandler(Filters.regex(r"^#[^\s]+"), hash_get, run_async=True)

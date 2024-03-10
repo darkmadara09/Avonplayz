@@ -65,7 +65,7 @@ async def paste(_, m):
                            ],[ InlineKeyboardButton("EZUP.DEV", url=link)]]),disable_web_page_preview=True)
 
             
-__mod_name__ = "PASTE"
+__mod_name__ = "Pᴀsᴛᴇ"
 
             
 __help__ = """

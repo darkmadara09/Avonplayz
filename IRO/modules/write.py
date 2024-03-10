@@ -17,4 +17,4 @@ __help__ = """
 » `/write` <text> : ᴡʀɪᴛᴇꜱ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ.
 """
 
-__mod_name__ = "WRITE"
+__mod_name__ = "Wʀɪᴛᴇ"

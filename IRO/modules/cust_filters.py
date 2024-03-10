@@ -635,7 +635,7 @@ __help__ = """
 
 """
 
-__mod_name__ = "FILTERS"
+__mod_name__ = "Fɪʟᴛᴇʀs"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)

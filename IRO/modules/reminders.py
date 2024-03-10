@@ -193,7 +193,7 @@ def clear_all_my_reminders(update: Update, context: CallbackContext):
         parse_mode = ParseMode.HTML
     )
 
-__mod_name__ = "REMINDERS"
+__mod_name__ = "Rᴇᴍɪɴᴅᴇʀs"
 __help__ = """
   ➢ `/reminders`*:* ɢᴇᴛ ᴀ ʟɪꜱᴛ ᴏꜰ *ᴛɪᴍᴇꜱᴛᴀᴍᴘꜱ* ᴏꜰ ʏᴏᴜʀ ʀᴇᴍɪɴᴅᴇʀꜱ. 
   ➢ `/setreminder <time> <remind message>`*:* ꜱᴇᴛ ᴀ ʀᴇᴍɪɴᴅᴇʀ ᴀꜰᴛᴇʀ ᴛʜᴇ ᴍᴇɴᴛɪᴏɴᴇᴅ ᴛɪᴍᴇ.

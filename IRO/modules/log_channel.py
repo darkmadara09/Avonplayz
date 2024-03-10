@@ -202,7 +202,7 @@ if is_module_loaded(FILENAME):
 
 """
 
-    __mod_name__ = "LOG-CHANNEL"
+    __mod_name__ = "Lᴏɢ-Cʜᴀɴɴᴇʟ"
 
     LOG_HANDLER = CommandHandler("logchannel", logging, run_async=True)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog, run_async=True)

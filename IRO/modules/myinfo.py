@@ -86,4 +86,4 @@ __help__ = """
  » `/myinfo` ɢᴇɴᴇʀᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ɪɴꜰᴏ.
 """
 
-__mod_name__ = "MY-INFO"
+__mod_name__ = "Mʏ-Iɴғᴏ"

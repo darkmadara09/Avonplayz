@@ -109,7 +109,7 @@ async def cancel_spam(event):
         return await event.respond("__ꜱᴛᴏᴘᴘᴇᴅ ᴍᴇɴᴛɪᴏɴ ʙᴀʙʏ🥀.__")
 
 
-__mod_name__ = "TAG-ALL"
+__mod_name__ = "Tᴀɢɢᴇʀ"
 __help__ = """
 
 » `/tagall` or `@all` (reply to message or add another message) :ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴍᴇᴍʙᴇʀꜱ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ, ᴡɪᴛʜᴏᴜᴛ ᴇxᴄᴇᴘᴛɪᴏɴ.

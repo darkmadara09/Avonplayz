@@ -69,4 +69,4 @@ async def phone(event):
     __help__ = """
  » `/phone` <any fake num> :  ɢᴇɴʀᴀᴛᴇꜱ ꜰᴀᴋᴇ ᴘʜᴏɴᴇ ɪɴꜰᴏ.
  """
-__mod_name__ = "PHONE"
+__mod_name__ = "Pʜᴏɴᴇ"

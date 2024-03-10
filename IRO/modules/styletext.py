@@ -473,7 +473,7 @@ def lined(update, context):
     else:
         message.reply_text(string)
 
-__mod_name__ = "FONT"
+__mod_name__ = "Fᴏɴᴛs"
 
 __help__ = """
 

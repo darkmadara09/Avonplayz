@@ -129,7 +129,7 @@ __help__ = """
 » /reqgban : ʏᴏᴜ ᴄᴀɴ ʀᴇǫᴜᴇsᴛ ᴜs ᴛᴏ ɢʙᴀɴ.
 """
 
-__mod_name__ = "REQGBAN"
+__mod_name__ = "Rᴇǫɢʙᴀɴ"
 REQGBAN_HANDLER = DisableAbleCommandHandler("reqgban", reqgban, run_async=True)
 
 dispatcher.add_handler(REQGBAN_HANDLER)

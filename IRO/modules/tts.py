@@ -39,4 +39,4 @@ dispatcher.add_handler(DisableAbleCommandHandler("tts", gtts, pass_args=True))
 __help__ = """
  » `/tts` <reply to msg> :  ᴛᴜʀɴꜱ ᴛᴇxᴛ ᴛᴏ ꜱᴘᴇᴇᴄʜ
  """
-__mod_name__ = "TTS"
+__mod_name__ = "Tᴛs"

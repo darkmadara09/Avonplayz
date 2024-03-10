@@ -153,7 +153,7 @@ USERNAME: @{message.chat.username}
 ➖➖➖➖➖➖➖➖➖➖➖➖**
 """)
             
-__mod_name__ = "SWELCOME"
+__mod_name__ = "Sᴡᴇʟᴄᴏᴍᴇ"
 
 __help__ = """
 » /swelcome : ᴛᴜʀɴ ᴏɴ ᴛʜᴇ sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ ғᴏʀ ɢʀᴏᴜᴘs

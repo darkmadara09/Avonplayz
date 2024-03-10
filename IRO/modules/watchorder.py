@@ -59,7 +59,7 @@ async def watchorder(event):
 		await event.reply(f'*Error*: Contact @{SUPPORT_CHAT}.\nERROR: {e}')
 		return
 
-__mod_name__ = "Wᴀᴛᴄʜ Oʀᴅᴇʀ"
+__mod_name__ = "WᴀᴛᴄʜOʀᴅᴇʀ"
 __help__ = """
  » /watchorder : ᴀɴɪᴍᴇ ᴡᴀᴛᴄʜ ᴏʀᴅᴇʀ.
  """

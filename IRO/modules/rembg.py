@@ -55,7 +55,7 @@ async def rmbg(bot, message):
       return os.remove(y)
   await rmbg.edit("**❍ ʀᴇᴘʟʏ ᴏɴʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ʀᴇᴍᴏᴠᴇ ɪᴛ's ʙᴀᴄᴋɢʀᴏᴜɴᴅ.**")
 
-__mod_name__ = "ʙɢʀᴍ"
+__mod_name__ = "Bɢʀᴍ"
 __help__ = """
  » /rmbg ➛ ʀᴇᴘʟʏ ᴏɴʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ʀᴇᴍᴏᴠᴇ ɪᴛ's ʙᴀᴄᴋɢʀᴏᴜɴᴅ.
  """

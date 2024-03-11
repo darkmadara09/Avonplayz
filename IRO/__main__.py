@@ -105,7 +105,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ", url=f"t.me/{bu}?startgroup=true"
+            text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/dazai_ixbot?startgroup=true"
         )
     ],
     [

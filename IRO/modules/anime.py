@@ -233,7 +233,8 @@ def anime(update: Update, context: CallbackContext):
                 InlineKeyboardButton("Trailer 🎬", url=trailer)
             ]]
         else:
-            buttons = [[InlineKeyboardButton("More Info", url=info)]]
+            buttons = [[InlineKeyboardButton("ᴍᴏʀᴇ ɪɴғᴏ", url=info)]]
+            buttons = [[InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=f"https://t.me/Main_Crunch_Roll_Hindi")]]
         if image:
             try:
                 update.effective_message.reply_photo(

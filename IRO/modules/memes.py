@@ -426,7 +426,7 @@ async def msg(event):
     await event.reply(reply_text)
 
 
-@pgram.on_message(filters.command("carbon"))
+@pbot.on_message(filters.command("carbon"))
 @capture_err
 async def carbon_func(_, message):
     if not message.reply_to_message:

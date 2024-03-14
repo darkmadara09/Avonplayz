@@ -11,27 +11,27 @@ users_db = MongoClient(db_url)['users']
 col = users_db['USER']
 grps = users_db['GROUPS']
 
+
 @pbot.on_message(filters.command("stats"))
 async def stats(_, m: Message):
-    users = col.find({})
-    mfs = []
-    for x in users:
-        mfs.append(x['user_id'])
+    users = col.find({})
+    mfs = []
+    for x in users:
+        mfs.append(x['user_id'])
 
-    total = len(mfs)
+    total = len(mfs)
 
-    grp = grps.find({})
-    grps_ = []
-    for x in grp:
-        grps_.append(x['chat_id'])
+    grp = grps.find({})
+    grps_ = []
+    for x in grp:
+        grps_.append(x['chat_id'])
 
-    total_ = len(grps_)
+    total_ = len(grps_)
 
-    await m.reply_photo(
-"https://telegra.ph/file/0a2589433151a7096275a.jpg", f"👥 ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ: {total}\n💭 ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ: {total_}")
+    await m.reply_photo("https://telegra.ph/file/0a2589433151a7096275a.jpg" , f"👥 ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ: `{total}`\n💭 ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ: `{total_}`")
 
-    
-__help__ = """
-» /stats :  ɢɪᴠᴇꜱ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ʏᴏᴜʀ ʙᴏᴛ
-"""
-__mod_name__ = "Sᴛᴀᴛs"
+    
+    __help__ = """
+ » `/stats` :  ɢɪᴠᴇꜱ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ʏᴏᴜʀ ʙᴏᴛ
+ """
+    __mod_name__ = "STATS"

@@ -10,8 +10,8 @@ import random
 from pyrogram import Client, filters
 from pyrogram.types import InputMediaPhoto, Message
 
-from Mikobot import app
-from Mikobot.state import state
+from IRO import pbot
+from IRO.state import state
 
 # <=======================================================================================================>
 
@@ -20,7 +20,7 @@ NEWS_URL = "https://sugoi-api.vercel.app/news?keyword={}"
 
 
 # <================================================ FUNCTION =======================================================>
-@app.on_message(filters.command("news"))
+@pbot.on_message(filters.command("news"))
 async def news(_, message: Message):
     keyword = (
         message.text.split(" ", 1)[1].strip() if len(message.text.split()) > 1 else ""
@@ -53,7 +53,7 @@ async def news(_, message: Message):
         await message.reply_text(f"Error: {str(e)}")
 
 
-@app.on_message(filters.command("bingsearch"))
+@pbot.on_message(filters.command("bingsearch"))
 async def bing_search(client: Client, message: Message):
     try:
         if len(message.command) == 1:
@@ -87,7 +87,7 @@ async def bing_search(client: Client, message: Message):
 
 
 # Command handler for the '/bingimg' command
-@app.on_message(filters.command("bingimg"))
+@pbot.on_message(filters.command("bingimg"))
 async def bingimg_search(client: Client, message: Message):
     try:
         text = message.text.split(None, 1)[
@@ -124,7 +124,7 @@ async def bingimg_search(client: Client, message: Message):
 
 
 # Command handler for the '/googleimg' command
-@app.on_message(filters.command("googleimg"))
+@pbot.on_message(filters.command("googleimg"))
 async def googleimg_search(client: Client, message: Message):
     try:
         text = message.text.split(None, 1)[

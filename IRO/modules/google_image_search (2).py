@@ -1,9 +1,3 @@
-"""
-Module made by t.me/ZrekryuDev
-Date: Fri, Dec 15 2023
-Supoort chat at t.me/KangersChat
-"""
-
 import asyncio
 import os
 import uuid
@@ -18,7 +12,7 @@ from pyrogram.types import (
 from pyrogram import Client, filters
 
 # Replace "YourRobot" with your module name.
-from YourRobot import pbot
+from IRO import pbot
 
 ENDPOINT = "https://sasta-api.vercel.app/googleImageSearch"
 httpx_client = httpx.AsyncClient(timeout=60)
@@ -47,7 +41,7 @@ class STRINGS:
 🔗 <b>Page Link:</b> <a href="{search_url}">Link</a>
 
 ⌛️ <b>Time Taken:</b> <code>{time_taken}</code> ms.
-🧑‍💻 <b>Credits:</b> @KangersNetwork
+🧑‍💻 <b>Credits:</b> @Ix_Upadtes
     """
     OPEN_SEARCH_PAGE = "↗️ Open Search Page"
 

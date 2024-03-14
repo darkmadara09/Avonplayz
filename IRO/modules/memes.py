@@ -53,7 +53,7 @@ from pyrogram import filters
 from IRO.utils.errors import capture_err
 from IRO.utils.carbon import make_carbon
 from IRO.events import register
-from IRO import telethn, ubot, pbot, TEMP_DOWNLOAD_DIRECTORY, SUPPORT_CHAT, LOGGER
+from IRO import telethn, ubot2, pbot, TEMP_DOWNLOAD_DIRECTORY, SUPPORT_CHAT, LOGGER
 
 nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger")

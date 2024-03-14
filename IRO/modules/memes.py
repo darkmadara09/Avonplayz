@@ -86,7 +86,7 @@ async def _(event):
         titles = item["title"]
         sed1 = img
         sedm = f"Title : {titles} \n{sedlyf} \nDate : {dateis} \nAuthor : {writter} \nReadMore : {readthis}"
-        await pgram.send_photo(event.chat_id, sed1, caption=sedm)
+        await pbot.send_photo(event.chat_id, sed1, caption=sedm)
 
 
 @register(pattern="^/ball(?: |$)(.*)")

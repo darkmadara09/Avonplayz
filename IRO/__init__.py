@@ -226,6 +226,7 @@ else:
         LOGGER.warning("Can't connect to SpamWatch!")
 
 from IRO.modules.sql import SESSION
+function = dispatcher.add_handler
 
 defaults = tg.Defaults(run_async=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)

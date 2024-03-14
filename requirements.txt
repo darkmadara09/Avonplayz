@@ -69,3 +69,4 @@ pyfiglet
 async_pymongo
 PyDictionary
 unidecode 
+nltk

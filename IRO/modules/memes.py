@@ -76,7 +76,7 @@ async def _(event):
     starknews = requests.get(main_url).json()
     x = starknews.get("data")
     if not x:
-        await pgram.send_message(event.chat_id, "Nothing Found.")
+        await pbot.send_message(event.chat_id, "Nothing Found.")
     for item in x:
         sedlyf = item["content"]
         img = item["imageUrl"]

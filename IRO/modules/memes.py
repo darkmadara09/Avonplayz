@@ -74,9 +74,10 @@ async def _(event):
     await stuber.edit("All News Has Been Sucessfully fetched, sendning to you."
                       )
     starknews = requests.get(main_url).json()
-    for item in starknews.get("data"):
-        if not item:
-            continue
+    x = starknews.get("data")
+    if not x:
+        await pgram.send_message(event.chat_id, "Nothing Found.")
+    for item in x:
         sedlyf = item["content"]
         img = item["imageUrl"]
         writter = item["author"]

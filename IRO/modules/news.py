@@ -164,7 +164,7 @@ async def googleimg_search(client: Client, message: Message):
 
 
 # <=================================================== HELP ====================================================>
-__mod_name__ = "SEARCH"
+__mod_name__ = "Nᴇᴡs"
 
 __help__ = """
 💭 𝗦𝗘𝗔𝗥𝗖𝗛

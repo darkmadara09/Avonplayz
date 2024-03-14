@@ -28,7 +28,7 @@ async def stats(_, m: Message):
 
     total_ = len(grps_)
 
-    await m.reply_photo("https://telegra.ph/file/0a2589433151a7096275a.jpg" , f"👥 ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ: `{total}`\n💭 ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ: `{total_}`")
+    await m.reply_photo("https://telegra.ph/file/0a2589433151a7096275a.jpg",f"👥 ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ: `{total}`\n💭 ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ: `{total_}`")
 
     
     __help__ = """

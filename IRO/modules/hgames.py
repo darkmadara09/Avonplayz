@@ -81,18 +81,6 @@ async def cute(e):
     await e.reply(CUTE, buttons=BUTTON, file=CUTIE)
 
 
-@asst.on(events.NewMessage(pattern="/wish ?(.*)"))
-async def wish(e):
-    api = requests.get("https://nekos.best/api/v2/happy").json()
-    url = api["results"][0]['url']
-    text = m.text.split(None, 1)[1]
-    wish_count = random.randint(1,100)
-    wish = f"❍ **ɢᴇᴛ {m.from_user.first_name} !**\n"
-    wish += f"❍ **ʏᴏᴜʀ ᴡɪꜱʜ** ➛ **{text}**\n"
-    wish += f"❍ **ᴘᴏꜱꜱɪʙʟᴇ ᴛᴏ ➛ {wish_count}%**"
-    await e.reply(WISH, buttons=BUTTON, file=WISHES)
-              
-              
 @asst.on(events.NewMessage(pattern="/lesbian ?(.*)"))
 async def lezbian(e):
     user_id = e.sender.id

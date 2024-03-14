@@ -67,7 +67,7 @@ async def _(event):
     if event.fwd_from:
         return
     infintyvar = event.pattern_match.group(1)
-    main_url = f"https://sugoi-api.vercel.app/news?keyword={infinityvar}"
+    main_url = f"https://sugoi-api.vercel.app/news?keyword={infintyvar}"
     stuber = await event.reply(
         f"Ok ! Fectching {infintyvar} From inshortsapi Server And Sending To News Channel",
     )

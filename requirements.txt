@@ -71,3 +71,4 @@ PyDictionary
 unidecode 
 nltk
 cowpy
+zalgo-text

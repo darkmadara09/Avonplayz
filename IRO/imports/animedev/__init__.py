@@ -2,7 +2,7 @@ import requests
 import json
 from . import exceptions
 
-base_url = 'https://9anime.dev'
+base_url = 'https://9anime.com.pl'
 
 class client:
     def __init__():

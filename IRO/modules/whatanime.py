@@ -48,7 +48,7 @@ import aiohttp
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from Shikimori import pbot
+from IRO import pbot
 
 session = aiohttp.ClientSession()
 progress_callback_data = {}

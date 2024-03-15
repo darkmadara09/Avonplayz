@@ -25,7 +25,7 @@ levelnum = [2,5,15,25,35,50,70,100]
     filters.command("level", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def levelsystem(_, message): 
-    leveldb = MongoClient(MONGO_DB_URL)
+    leveldb = MongoClient(MONGO_DB_URI)
    
     toggle = leveldb["ToggleDb"]["Toggle"] 
     if message.from_user:
@@ -59,7 +59,7 @@ async def level(client: Client, message: Message):
     chat = message.chat.id
     user_id = message.from_user.id
 
-    leveldb = MongoClient(MONGO_DB_URL)
+    leveldb = MongoClient(MONGO_DB_URI)
     
     level = leveldb["LevelDb"]["Level"] 
     toggle = leveldb["ToggleDb"]["Toggle"] 
@@ -100,7 +100,7 @@ async def rank(client: Client, message: Message):
     chat = message.chat.id
     user_id = message.from_user.id    
     
-    leveldb = MongoClient(MONGO_DB_URL)
+    leveldb = MongoClient(MONGO_DB_URI)
     
     level = leveldb["LevelDb"]["Level"] 
     toggle = leveldb["ToggleDb"]["Toggle"] 

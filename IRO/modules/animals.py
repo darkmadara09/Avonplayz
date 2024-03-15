@@ -56,16 +56,10 @@ def cats(update, context):
         img = result['file']
         msg.reply_photo(photo=img)
 
-ANIMALFACT_HANDLER = DisableAbleCommandHandler("animalfacts", animalfact, run_async=True)
+ANIMALFACT_HANDLER = DisableAbleCommandHandler("otakuz", animalfact, run_async=True)
 dispatcher.add_handler(ANIMALFACT_HANDLER)
-CAT_HANDLER = DisableAbleCommandHandler(("cats", "cat"), cats, run_async=True)
-dispatcher.add_handler(CAT_HANDLER)
 
-__mod_name__ = "Aɴɪᴍᴀʟs"
+__mod_name__ = "Oᴛᴀᴋᴜᴢ"
 __help__ = """
-   » `/animalfacts` - To Get random animal facts.
-   » `/cats` - To Get Random Photo of Cats.
-   » `/goose`*:* Sends Random Goose pic.
-   » `/woof`*:* Sends Random Woof pic.
-   » `/lizard`*:* Sends Random Lizard GIFs.
+   » `/otakuz` : ᴛᴏ ɢᴇᴛ ᴀɴɪᴍᴇ ᴅɪᴀʟᴏɢᴜᴇs.
 """

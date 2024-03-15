@@ -35,7 +35,7 @@ import requests
 import random
 import IRO.strings.animal_facts_string as animal_facts
 from IRO import dispatcher
-from IRO import Update
+from telegram import Update
 from IRO.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext
 

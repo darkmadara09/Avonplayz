@@ -51,7 +51,8 @@ async def mentionall(event):
             return await event.respond(
                 "__ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀꜱ ꜰᴏʀ ᴏʟᴅᴇʀ ᴍᴇꜱꜱᴀɢᴇꜱ! (ᴍᴇꜱꜱᴀɢᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ꜱᴇɴᴛ ʙᴇꜰᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ) ʙᴀʙʏ🥀__")
     else:
-        return await event.reply("__ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ ꜱᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀꜱ ʙᴀʙʏ🥀!__")
+        mode = "text_on_cmd"
+        msg = ""
 
     spam_chats.append(chat_id)
     usrnum = 0
@@ -60,7 +61,7 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id})\n"
         if usrnum == 5:
             if mode == "text_on_cmd":
                 txt = f"{msg}\n{usrtxt}"

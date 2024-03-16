@@ -71,3 +71,4 @@ PyDictionary
 unidecode 
 python-arq
 httpx[http2]
+pydub

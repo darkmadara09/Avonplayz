@@ -7,8 +7,8 @@ import numpy as np
 from pydub import AudioSegment
 from telethon import events
 
-from Cutiepii_Robot.utils.pluginhelper import is_admin
-from Cutiepii_Robot import telethn, BOT_ID, OWNER_ID, SUPPORT_CHAT
+from IRO.utils.pluginhelper import is_admin
+from IRO import telethn, BOT_ID, OWNER_ID, SUPPORT_CHAT
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 

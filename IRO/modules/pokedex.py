@@ -36,7 +36,7 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 from IRO import pbot
-from IRO.extras.errors import capture_err
+from IRO.utils.errors import capture_err
 
 @pbot.on_message(filters.command(['pokedex', 'pokemon']))
 @capture_err

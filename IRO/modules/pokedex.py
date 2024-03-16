@@ -5,7 +5,7 @@
 
 # <============================================== IMPORTS =========================================================>
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
-from telegram.ext import Callbackcontext, CallbackQueryHandler, CommandHandler
+from telegram import Callbackcontext, CallbackQueryHandler, CommandHandler
 
 from IRO import dispatcher
 from IRO.state import state

@@ -35,3 +35,8 @@ async def give_link_command(client, message):
     chat = message.chat.id
     link = await pbot.export_chat_invite_link(chat)
     await message.reply_text(f"Here's the invite link for this chat:\n{link}")
+
+__mod_name__ = "Usᴇʀʟɪsᴛ"
+__help__ = """
+ » /user : ɢɪᴠᴇs ᴛxᴛ ғɪʟᴇ ᴏғ ᴜsᴇʀs ɪɴ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ.
+ """

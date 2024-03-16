@@ -21,3 +21,8 @@ async def bored_command(client, message):
             await message.reply("Nᴏ ᴀᴄᴛɪᴠɪᴛʏ ғᴏᴜɴᴅ.")
     else:
         await message.reply("Fᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴀᴄᴛɪᴠɪᴛʏ.")
+
+__mod_name__ = "Bᴏʀᴇᴅ"
+__help__ = """
+ » /bored : ɢᴇᴛᴛɪɴɢ ʙᴏʀᴇᴅ ᴛʀʏ ᴛʜɪs.
+ """

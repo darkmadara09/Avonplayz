@@ -70,3 +70,8 @@ def get_movie_info(movie_name):
         return info
     else:
         return "Movie not found or API request failed."
+
+__mod_name__ = "Mᴏᴠɪᴇ"
+__help__ = """
+ » /rmbg : ɢᴇᴛ ᴍᴏᴠɪᴇ ɪɴғᴏ.
+ """

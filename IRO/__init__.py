@@ -215,9 +215,6 @@ DRAGONS.add(6045293810)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(6045293810)
 
-dispatcher = Application.builder().token(TOKEN).build()
-function = dispatcher.add_handler
-
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning("SpamWatch API key missing! recheck your config")

@@ -47,18 +47,15 @@ async def feedback(e):
     user_name = e.sender.first_name
     mention = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
     HOTTIE = (
-        "https://telegra.ph/file/5a03a79acba8d3c407056.jpg",
-        "https://telegra.ph//file/15ab1c01c8ed09a7ffc95.jpg",
-        "https://telegra.ph/file/b4af1ee5c4179e8833d6d.jpg",
-        "https://telegra.ph/file/15f2fb8f2ff8c0bf2bd06.jpg",
-        "https://telegra.ph//file/5a3ec69041389b4fbcc2a.jpg",
-        "https://telegra.ph/file/979500203d6fcf1924130.jpg",
-        "https://telegra.ph/file/6b09f8642d1890e4d67c8.jpg",
-        "https://telegra.ph/file/abf580ada4818ab99f9c0.jpg",
-        "https://telegra.ph/file/ab410f256673c3001307b.jpg",
-        "https://telegra.ph/file/398e8cb58bff53c59ee19.jpg",
+        "https://telegra.ph/file/2fc46a598084cb1b305ae.jpg",
+        "https://telegra.ph/file/85bc2e49966a58ce001a7.jpg",
+        "https://telegra.ph/file/fe2fb3807437c7955442f.jpg",
+        "https://telegra.ph/file/f1bbdb337914f76434503.jpg",
+        "https://telegra.ph/file/082cd8a4eccca6b93e0cb.jpg",
+        "https://telegra.ph/file/bb061e8fc2a4ebee496d7.jpg",
+        "https://telegra.ph/file/c77483b0061e01342ab75.jpg",
     )
-    FEED = ("https://telegra.ph/file/7739e801954a16bcb130f.jpg", )
+    FEED = ("https://telegra.ph/file/c30e6b78b571e7d63724e.jpg", )
     BUTTON = [[
         Button.url("Go To Support Group", f"https://t.me/{SUPPORT_CHAT}")
     ]]

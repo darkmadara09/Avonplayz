@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 import requests
 from IRO import pbot
-import MukeshRobot
+import IRO
 from IRO import *
 
 app = pbot

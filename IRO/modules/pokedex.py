@@ -45,7 +45,7 @@ async def PokeDex(_, message):
         await message.reply_text("/pokedex Pokemon Name")
         return
     pokemon = message.text.split(None, 1)[1]
-    pokedex = f'https://some-random-api.ml/pokedex?pokemon={pokemon}'
+    pokedex = f"https://sugoi-api.vercel.app/pokedex?pokemon={pokemon}"
     async with aiohttp.ClientSession() as session:
         async with session.get(pokedex) as request:
             if request.status == 404:

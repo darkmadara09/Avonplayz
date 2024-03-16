@@ -43,3 +43,8 @@ def apply_bass_boost(audio_path):
     boosted_audio.export(boosted_audio_path, format="mp3")
 
     return boosted_audio_path
+
+__mod_name__ = "Bᴀss"
+__help__ = """
+ » /bass : ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ ғɪʟᴇ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ɪᴛs ʙᴀss.
+ """

@@ -35,4 +35,9 @@ def love_command(client, message):
         response = f"{name1}💕 + {name2}💕 = {love_percentage}%\n\n{love_message}"
     else:
         response = "Please enter two names after /love command."
-    app.send_message(message.chat.id, response)
+    pbot.send_message(message.chat.id, response)
+
+__mod_name__ = "Lᴏᴠᴇ"
+__help__ = """
+ » /love : ᴡʀɪᴛᴇ ᴛᴡᴏ ɴᴀᴍᴇs ᴀɴᴅ ғɪɴᴅ ʟᴏᴠᴇ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ.
+ """

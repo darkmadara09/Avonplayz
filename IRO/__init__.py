@@ -101,7 +101,7 @@ if ENV:
     DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "TRYUKo5sCJ6q1WaK4k4ENHya")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
-    BOT_ID = int(os.environ.get("BOT_ID", None))	
+    BOT_ID = os.environ.get("BOT_ID", None)
     LOAD = os.environ.get("LOAD", "").split()
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)

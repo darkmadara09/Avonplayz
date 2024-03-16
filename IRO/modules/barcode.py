@@ -38,3 +38,8 @@ def qr_handler(client, message: Message):
         message.reply_photo(qr_image, caption="Here's your QR Code")
     else:
         message.reply_text("Please provide the text for the QR code after the command. Example usage: /qr text")
+
+__mod_name__ = "Qʀ-Cᴏᴅᴇ"
+__help__ = """
+ » /qr : ᴡʀɪᴛᴇ ᴀɴʏ ᴛᴇxᴛ.
+ """

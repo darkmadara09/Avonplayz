@@ -1,8 +1,8 @@
 from pyrogram import Client, filters
 import requests
-from MukeshRobot import pbot
+from IRO import pbot
 import MukeshRobot
-from MukeshRobot import *
+from IRO import *
 
 app = pbot
 
@@ -27,3 +27,8 @@ async def download_instagram_reel(client, message):
             await message.reply_text(f"Request failed with status code: {response.status_code}")
     except Exception as e:
         await message.reply_text(f"Something went wrong: {e}")
+
+__mod_name__ = "Rᴇᴇʟ"
+__help__ = """
+ » /reel : ʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴀ ʀᴇᴇʟ.
+ """

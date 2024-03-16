@@ -35,7 +35,7 @@ async def get_pokemon_info(name_or_id):
     return None
 
 
-async def pokedex(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def pokedex(update: Update, context: ContextTypes.default_type):
     try:
         if context.args:
             name_or_id = context.args[0]
@@ -84,7 +84,7 @@ async def pokedex(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"An error occurred: {str(e)}")
 
 
-async def callback_query_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def callback_query_handler(update: Update, context: ContextTypes.default_type):
     query = update.callback_query
     await query.answer()
 

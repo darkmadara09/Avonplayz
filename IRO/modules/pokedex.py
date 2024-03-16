@@ -5,7 +5,7 @@
 
 # <============================================== IMPORTS =========================================================>
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
-from telegram.ext import ContextTypes, CallbackQueryHandler, CommandHandler
+from telegram.ext import Callbackcontext, CallbackQueryHandler, CommandHandler
 
 from IRO import dispatcher
 from IRO.state import state
@@ -84,7 +84,7 @@ async def pokedex(update: Update, context: Callbackcontext):
         await update.message.reply_text(f"An error occurred: {str(e)}")
 
 
-async def callback_query_handler(update: Update, context: ContextTypes.default_type):
+async def callback_query_handler(update: Update, context: Callbackcontext):
     query = update.callback_query
     await query.answer()
 

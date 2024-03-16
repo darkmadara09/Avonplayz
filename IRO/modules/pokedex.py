@@ -7,9 +7,10 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import ContextTypes, CallbackQueryHandler, CommandHandler
 
-from IRO import function
+from IRO import dispatcher
 from IRO.state import state
 
+function = dispatcher.add_handler
 # <=======================================================================================================>
 
 

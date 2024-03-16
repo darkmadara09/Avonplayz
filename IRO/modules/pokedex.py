@@ -35,7 +35,7 @@ async def get_pokemon_info(name_or_id):
     return None
 
 
-async def pokedex(update: Update, context: ContextTypes.default_type):
+async def pokedex(update: Update, context: Callbackcontext):
     try:
         if context.args:
             name_or_id = context.args[0]

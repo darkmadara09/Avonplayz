@@ -469,7 +469,6 @@ def IRO_about_callback(update, context):
 def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
-        query.message.edit_text(
         uptime = get_readable_time((time.time() - StartTime))
         cpu = psutil.cpu_percent(interval=0.5)
         mem = psutil.virtual_memory().percent

@@ -109,7 +109,7 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="IRO_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="source_"),
         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"),
     ],
     [
@@ -470,17 +470,25 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="๏›› soon",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="◁", callback_data="IRO_")
-                 ]
-                ]
-            ),
-        )
+        uptime = get_readable_time((time.time() - StartTime))
+        cpu = psutil.cpu_percent(interval=0.5)
+        mem = psutil.virtual_memory().percent
+        disk = psutil.disk_usage("/").percent
+        text = f"""
+𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
+➖➖➖➖➖➖
+UPTIME ➼ {uptime}
+CPU ➼ {cpu}%
+RAM ➼ {mem}%
+DISK ➼ {disk}%
+
+» **ʟɪʙʀᴀʀʏ  :** `{so}`
+» **ᴛᴇʟᴇᴛʜᴏɴ :** `{am}`
+» **ᴘʏʀᴏɢʀᴀᴍ :** `{do}`
+» **ᴍᴏɴɢᴏ ᴅʙ :** `3.9.0`
+» **ꜱQʟᴀʟᴄʜᴇᴍʏ :** `1.4.31`
+"""
+        
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(

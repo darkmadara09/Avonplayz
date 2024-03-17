@@ -31,9 +31,9 @@ import time
 
 import psutil
 
-import Exon.modules.no_sql.users_db as users_db
-from Exon import BOT_NAME, StartTime
-from Exon.modules.helper_funcs import formatter
+import IRO.modules.sql.users_db as users_db
+from IRO import StartTime
+from IRO.modules.helper_funcs import formatter
 
 # sᴛᴀᴛs ᴍᴏᴅᴜʟᴇ
 
@@ -46,7 +46,6 @@ async def bot_sys_stats():
     process = psutil.Process(os.getpid())
     return f"""
 ------------------
-⛖ {BOT_NAME} ᴜᴘᴛɪᴍᴇ : {formatter.get_readable_time(bot_uptime)}
 ⛖ ʙᴏᴛ ᴄᴀᴘᴀᴄɪᴛʏ : {round(process.memory_info()[0] / 1024**2)} ᴍʙ
 ⛖ ᴄᴘᴜ ᴜsᴀɢᴇ : {cpu}%
 ⛖ ʀᴀᴍ ᴜsᴀɢᴇ : {mem}%

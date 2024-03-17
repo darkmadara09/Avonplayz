@@ -466,9 +466,9 @@ def IRO_about_callback(update, context):
         )
 
 
-async def Source_about_callback(update, context):
+async def stats_back(update, context):
     query = update.callback_query
-    if query.data == "source_":
+    if query.data == "insider_":
         uptime = get_readable_time((time.time() - StartTime))
         cpu = psutil.cpu_percent(interval=0.5)
         mem = psutil.virtual_memory().percent
@@ -481,11 +481,11 @@ CPU ➼ {cpu}%
 RAM ➼ {mem}%
 DISK ➼ {disk}%
 
-» **ʟɪʙʀᴀʀʏ  :** `{so}`
-» **ᴛᴇʟᴇᴛʜᴏɴ :** `{am}`
-» **ᴘʏʀᴏɢʀᴀᴍ :** `{do}`
-» **ᴍᴏɴɢᴏ ᴅʙ :** `3.9.0`
-» **ꜱQʟᴀʟᴄʜᴇᴍʏ :** `1.4.31`
+PYTHON ➼ {PYTHON_VERSION}
+
+PTB ➼ {PTB_VERSION}
+TELETHON ➼ {TELETHON_VERSION}
+PYROGRAM ➼ {PYROGRAM_VERSION}
 """
         await query.answer(text=text, show_alert=True)
         
@@ -819,8 +819,8 @@ def main():
         IRO_about_callback, pattern=r"IRO_", run_async=True
     )
 
-    source_callback_handler = CallbackQueryHandler(
-        Source_about_callback, pattern=r"source_", run_async=True
+    stats_back_handler = CallbackQueryHandler(
+        stats_back, pattern=r"insider_", run_async=True
     )
 
     donate_handler = CommandHandler("donate", donate, run_async=True)

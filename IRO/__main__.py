@@ -466,7 +466,7 @@ def IRO_about_callback(update, context):
         )
 
 
-def Source_about_callback(update, context):
+async def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         uptime = get_readable_time((time.time() - StartTime))

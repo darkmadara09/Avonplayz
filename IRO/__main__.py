@@ -487,6 +487,7 @@ DISK ➼ {disk}%
 » **ᴍᴏɴɢᴏ ᴅʙ :** `3.9.0`
 » **ꜱQʟᴀʟᴄʜᴇᴍʏ :** `1.4.31`
 """
+        await query.answer(text=text, show_alert=True)
         
     elif query.data == "source_back":
         first_name = update.effective_user.first_name

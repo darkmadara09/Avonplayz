@@ -109,7 +109,7 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="stats_callback"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="IRO_"),
         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"),
     ],
     [

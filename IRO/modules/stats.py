@@ -31,7 +31,7 @@ import time
 
 import psutil
 
-import IRO.modules.sql.users_db as users_db
+import IRO.modules.no_sql.users_db as users_db
 from IRO import StartTime
 from IRO.modules.helper_funcs import formatter
 

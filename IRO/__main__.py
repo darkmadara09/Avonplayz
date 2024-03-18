@@ -468,7 +468,7 @@ def IRO_about_callback(update, context):
 
 async def bot_sys_stats(update, context):
     query = update.callback_query
-    if query.data == "insider":
+    query.data == "insider":
     bot_uptime = int(time.time() - StartTime)
     cpu = psutil.cpu_percent()
     mem = psutil.virtual_memory().percent

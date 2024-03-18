@@ -1,5 +1,6 @@
 import time
 from typing import List
+import IRO as pbot
 
 import requests
 from telegram import ParseMode, Update
@@ -70,7 +71,7 @@ def ping_func(to_ping: List[str]) -> List[str]:
     return ping_result
 
 
-@IRO.on_callback_query(filters.regex("stats_callback"))
+@pbot.on_callback_query(filters.regex("stats_callback"))
 async def stats_callback(_, CallbackQuery):
     text = await nagisa()
     await IRO.answer_callback_query(CallbackQuery.id, text, show_alert=True)

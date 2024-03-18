@@ -109,7 +109,7 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="insider_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="source_back"),
         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"),
     ],
     [
@@ -466,25 +466,21 @@ def IRO_about_callback(update, context):
         )
 
 
-async def bot_sys_stats(update, context):
+def Source_about_callback(update, context):
     query = update.callback_query
-    query.data == "insider":
-    bot_uptime = int(time.time() - StartTime)
-    cpu = psutil.cpu_percent()
-    mem = psutil.virtual_memory().percent
-    disk = psutil.disk_usage("/").percent
-    process = psutil.Process(os.getpid())
-    return f"""
-------------------
-⛖ ʙᴏᴛ ᴄᴀᴘᴀᴄɪᴛʏ : {round(process.memory_info()[0] / 1024**2)} ᴍʙ
-⛖ ᴄᴘᴜ ᴜsᴀɢᴇ : {cpu}%
-⛖ ʀᴀᴍ ᴜsᴀɢᴇ : {mem}%
-⛖ ᴅɪsᴋ ᴜsᴀɢᴇ : {disk}%
-⛖ ᴜsᴇʀs : 0{users_db.num_users()} ᴜsᴇʀs.
-⛖ ɢʀᴏᴜᴘs : 0{users_db.num_chats()} ɢʀᴏᴜᴘs.
-"""
-        await query.answer(text=text, show_alert=True)
-        
+    if query.data == "source_":
+        query.message.edit_text(
+            text="๏›› soon",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="◁", callback_data="IRO_")
+                 ]
+                ]
+            ),
+        )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
@@ -815,8 +811,8 @@ def main():
         IRO_about_callback, pattern=r"IRO_", run_async=True
     )
 
-    stats_back_handler = CallbackQueryHandler(
-        stats_back, pattern=r"insider", run_async=True
+    Source_about_callback = CallbackQueryHandler(
+        Source_about_callback, pattern=r"source_", run_async=True
     )
 
     donate_handler = CommandHandler("donate", donate, run_async=True)

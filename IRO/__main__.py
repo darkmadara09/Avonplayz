@@ -415,7 +415,7 @@ def help_button(update, context):
         pass
 
 
-async def stats_back(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def stats_back(update, context):
     query = update.callback_query
     if query.data == "insider_":
         uptime = get_readable_time((time.time() - StartTime))

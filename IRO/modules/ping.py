@@ -1,6 +1,5 @@
 import time
 from typing import List
-from IRO import pbot as IRO
 
 import requests
 from telegram import ParseMode, Update

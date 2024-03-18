@@ -415,7 +415,7 @@ def help_button(update, context):
         pass
 
 
-async def stats_back(update, context):
+async def stats_back(update, Callbackcontext):
     query = update.callback_query
     if query.data == "insider_":
         uptime = get_readable_time((time.time() - StartTime))
@@ -430,7 +430,7 @@ CPU ➼ {cpu}%
 RAM ➼ {mem}%
 DISK ➼ {disk}%
 """
-        await query.answer(text=text, show_alert=True)
+        await query.answer(text, show_alert=True)
 
 def IRO_about_callback(update, context):
     query = update.callback_query

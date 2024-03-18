@@ -32,7 +32,7 @@ from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from pymongo import MongoClient, collection
 
 from IRO import DB_NAME
-from IRO import MONGO_URI as MONGO_DB_URI
+from IRO import MONGO_DB_URI 
 
 mongo = MongoCli(MONGO_DB_URI)
 Asudb = mongo.ExonRobot_

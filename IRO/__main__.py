@@ -833,7 +833,7 @@ def main():
     )
 
     stats_back_handler = CallbackQueryHandler(
-        stats_back_callback, pattern=r"insider_", run_async=True
+        stats_back, pattern=r"insider_", run_async=True
     )
 
     donate_handler = CommandHandler("donate", donate, run_async=True)

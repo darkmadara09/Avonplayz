@@ -109,7 +109,7 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="stats_callback"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="insider_"),
         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"),
     ],
     [
@@ -466,26 +466,22 @@ def IRO_about_callback(update, context):
         )
 
 
-async def stats_back(update, context):
+async def bot_sys_stats(update, context):
     query = update.callback_query
     if query.data == "insider":
-        uptime = get_readable_time((time.time() - StartTime))
-        cpu = psutil.cpu_percent(interval=0.5)
-        mem = psutil.virtual_memory().percent
-        disk = psutil.disk_usage("/").percent
-        text = f"""
-𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
-➖➖➖➖➖➖
-UPTIME ➼ {uptime}
-CPU ➼ {cpu}%
-RAM ➼ {mem}%
-DISK ➼ {disk}%
-
-PYTHON ➼ {PYTHON_VERSION}
-
-PTB ➼ {PTB_VERSION}
-TELETHON ➼ {TELETHON_VERSION}
-PYROGRAM ➼ {PYROGRAM_VERSION}
+    bot_uptime = int(time.time() - StartTime)
+    cpu = psutil.cpu_percent()
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage("/").percent
+    process = psutil.Process(os.getpid())
+    return f"""
+------------------
+⛖ ʙᴏᴛ ᴄᴀᴘᴀᴄɪᴛʏ : {round(process.memory_info()[0] / 1024**2)} ᴍʙ
+⛖ ᴄᴘᴜ ᴜsᴀɢᴇ : {cpu}%
+⛖ ʀᴀᴍ ᴜsᴀɢᴇ : {mem}%
+⛖ ᴅɪsᴋ ᴜsᴀɢᴇ : {disk}%
+⛖ ᴜsᴇʀs : 0{users_db.num_users()} ᴜsᴇʀs.
+⛖ ɢʀᴏᴜᴘs : 0{users_db.num_chats()} ɢʀᴏᴜᴘs.
 """
         await query.answer(text=text, show_alert=True)
         

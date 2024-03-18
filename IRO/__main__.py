@@ -415,6 +415,23 @@ def help_button(update, context):
         pass
 
 
+async def stats_back(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "insider_":
+        uptime = get_readable_time((time.time() - StartTime))
+        cpu = psutil.cpu_percent(interval=0.5)
+        mem = psutil.virtual_memory().percent
+        disk = psutil.disk_usage("/").percent
+        text = f"""
+𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
+➖➖➖➖➖➖
+UPTIME ➼ {uptime}
+CPU ➼ {cpu}%
+RAM ➼ {mem}%
+DISK ➼ {disk}%
+"""
+        await query.answer(text=text, show_alert=True)
+
 def IRO_about_callback(update, context):
     query = update.callback_query
     if query.data == "IRO_":
@@ -437,7 +454,7 @@ def IRO_about_callback(update, context):
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/ix_updates"),
                  ],
                  [
-        InlineKeyboardButton(text="", url=f"yumiko_source"),
+        InlineKeyboardButton(text="INSIDER", callback_data="insider_"),
                  ],
                  [
                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="IRO_back"),
@@ -815,6 +832,10 @@ def main():
         Source_about_callback, pattern=r"source_", run_async=True
     )
 
+    stats_back_handler = CallbackQueryHandler(
+        stats_back_callback, pattern=r"insider_", run_async=True
+    )
+
     donate_handler = CommandHandler("donate", donate, run_async=True)
     migrate_handler = MessageHandler(
         Filters.status_update.migrate, migrate_chats, run_async=True
@@ -826,6 +847,7 @@ def main():
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(source_callback_handler)
     dispatcher.add_handler(settings_handler)
+    dispatcher.add_handler(stats_back_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)

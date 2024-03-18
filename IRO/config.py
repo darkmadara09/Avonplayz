@@ -40,6 +40,7 @@ class Config(object):
 
     # RECOMMENDED
     STRING_SESSION ="" #telethon string session of user or bot get it from @Iro_string_bot
+    DB_NAME = ""
     MONGO_DB_URI = "" #get it from mongodb.com get
     ARQ_API_KEY = "" #git it form @ARQRobot
     ARQ_API_URL = "https://arq.hamker.in" # dont change

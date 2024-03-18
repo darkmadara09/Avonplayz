@@ -97,6 +97,7 @@ if ENV:
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     START_STICKER = os.environ.get("START_STICKER", None)
     STRICT_GMUTE = os.environ.get('STRICT_GMUTE', True)
+    DB_NAME = os.environ.get("DATABASE_NAME", None)
     DB_URL = os.environ.get("DATABASE_URL")
     DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "TRYUKo5sCJ6q1WaK4k4ENHya")

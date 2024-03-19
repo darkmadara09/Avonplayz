@@ -95,7 +95,7 @@ start_txt = """
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {} !*
-▸ ɪ ᴀᴍ {} [👾]({}) ᴀ ᴘᴏᴡᴇʀ ꜰᴜʟʟ ʙᴏᴛ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ
+▸ ɪ ᴀᴍ {} [❄️]({}) ᴀ ᴘᴏᴡᴇʀ ꜰᴜʟʟ ʙᴏᴛ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ
 ────────────────────────
 ▸ ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴇᴀsɪʟʏ !
 ────────────────────────
@@ -105,7 +105,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/dazai_ixbot?startgroup=true"
+            text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/Muichiro_xbot?startgroup=true"
         )
     ],
     [
@@ -119,7 +119,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ:[ ](https://telegra.ph/file/7fdded49606fdb72e7bec.mp4)
+ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ:[ ](https://graph.org/file/fd568dfbec6986a1c2275.mp4)
 » /help: PM's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
 » /donate: ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏɴ ʜᴏᴡ ᴛᴏ ᴅᴏɴᴀᴛᴇ!
 » /settings:
@@ -364,7 +364,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "[ ](https://telegra.ph/file/ad4373d20c9326890121d.jpg)ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʜᴇʟᴘ ꜰᴏʀ ᴛʜᴇ *{}* ᴍᴏᴅᴜʟᴇ:\n".format(
+                "[ ](https://graph.org/file/3ac88ad0f9241a34959d9.jpg)ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʜᴇʟᴘ ꜰᴏʀ ᴛʜᴇ *{}* ᴍᴏᴅᴜʟᴇ:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -436,7 +436,7 @@ def IRO_about_callback(update, context):
     query = update.callback_query
     if query.data == "IRO_":
         query.message.edit_text(
-            text=f"[ ](https://telegra.ph/file/ad4373d20c9326890121d.jpg) ๏ I'm [{BOT_NAME}](https://t.me/dazai_ixbot), ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ."
+            text=f"[ ](https://graph.org/file/3ac88ad0f9241a34959d9.jpg) ๏ I'm [{BOT_NAME}](https://t.me/dazai_ixbot), ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ."
             "\n» ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ."
             "\n» ᴀɪ ɪɴᴛᴇɢʀᴀᴛɪᴏɴ."
             "\n» ᴀᴅᴠᴀɴᴄᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴄᴀᴘᴀʙɪʟɪᴛʏ."
@@ -451,7 +451,7 @@ def IRO_about_callback(update, context):
                 [
                  [
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/ix_updates"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/Muichiro_Updates"),
                  ],
                  [
         InlineKeyboardButton(text="INSIDER", callback_data="insider_"),
@@ -787,11 +787,11 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/7fdded49606fdb72e7bec.mp4",
+                animation="https://graph.org/file/fd568dfbec6986a1c2275.mp4",
                 caption=f"""
 ㅤ{dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ .....
 ━━━━━━━━━━━━━
-» **ᴏᴡɴᴇʀ :** [ᴅᴀᴢᴀɪ](https://t.me/{OWNER_USERNAME})
+» **ᴏᴡɴᴇʀ :** [Mᴜɪᴄʜɪʀᴏ](https://t.me/{OWNER_USERNAME})
 » **ʟɪʙʀᴀʀʏ  :** `{so}`
 » **ᴛᴇʟᴇᴛʜᴏɴ :** `{am}`
 » **ᴘʏʀᴏɢʀᴀᴍ :** `{do}`
@@ -799,7 +799,7 @@ def main():
 » **ꜱQʟᴀʟᴄʜᴇᴍʏ :** `1.4.31`
 ━━━━━━━━━━━━━
 
-⍟ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [𝗗𝗔𝗭𝗔𝗜](https://t.me/DemonS_CitY_0)
+⍟ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴜɪᴄʜɪʀᴏ](https://t.me/Muichiro_support)
 
 """,
                 parse_mode=ParseMode.MARKDOWN,

@@ -13,7 +13,7 @@ PHOTO = [
 
 @register(pattern=("/muichiro"))
 async def awake(event):
-    TEXT = f"Wᴇʟᴄᴏᴍᴇ Tᴏ **[𓆩『 ᴍᴜɪᴄʜɪʀᴏ ᴜᴘᴅᴀᴛᴇs 』𓆪](https://t.me/Muichiro_Updates)** \n\n ɪs ᴀɴ ᴀɴɪᴍᴇ ʙᴀsᴇᴅ Cᴏᴍᴍᴜɴɪᴛʏ ᴡɪᴛʜ ᴀ ᴍᴏᴛɪᴠᴇ ᴛᴏ sᴘʀᴇᴀᴅ ʟᴏᴠᴇ ᴀɴᴅ ᴘᴇᴀᴄᴇ ᴀʀᴏᴜɴᴅ ᴛᴇʟᴇɢʀᴀᴍ. Gᴏ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ Jᴏɪɴ ᴛʜᴇ Cᴏᴍᴍᴜɴɪᴛʏ ɪғ ɪᴛ ᴅʀᴀᴡs ʏᴏᴜʀ ᴀᴛᴛᴇɴᴛɪᴏɴ."
+    TEXT = f"Wᴇʟᴄᴏᴍᴇ Tᴏ **[𓆩『 ᴍᴜɪᴄʜɪʀᴏ ᴜᴘᴅᴀᴛᴇs 』𓆪](https://t.me/Muichiro_Updates)** \n\n ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴀɴʏ ᴜᴘᴅᴀᴛᴇs ʀᴇɢᴀʀᴅɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴏɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ sᴏ ʏᴏᴜ ᴍᴜsᴛ Jᴏɪɴ ᴛʜᴇ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ."
     BUTTON = [
         [
             Button.url("Oᴡɴᴇʀ​", f"https://t.me/Conc_chemical"),

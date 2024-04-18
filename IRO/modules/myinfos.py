@@ -79,7 +79,7 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        LILIE = "➤ Yumeko's Current System Stats \n\n"
+        LILIE = "➤ Dᴀᴢᴀɪ Cᴜʀʀᴇɴᴛ Sʏsᴛᴇᴍ Sᴛᴀᴛs \n\n"
         LILIE += f"────────────────────────\n"
         LILIE += f"• UPTIME: {formatter.get_readable_time((bot_uptime))}\n"
         LILIE += f"• BOT: {round(process.memory_info()[0] / 1024 ** 2)} MB \n"

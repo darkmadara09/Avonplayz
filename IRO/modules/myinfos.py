@@ -86,6 +86,8 @@ async def callback_query_handler(event):
         LILIE += f"• CPU: {cpu}% \n"
         LILIE += f"• RAM: {mem}%\n"
         LILIE += f"• DISK: {disk}%\n"
+        LILIE += f"• CHATS: {chats}\n"
+        LILIE += f"• USERS: {users}\n"
         LILIE += f"────────────────────────\n"
         await event.answer(LILIE, alert=True)
     except Exception as e:

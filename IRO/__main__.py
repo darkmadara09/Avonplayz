@@ -454,7 +454,7 @@ def IRO_about_callback(update, context):
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/Muichiro_Updates"),
                  ],
                  [
-        InlineKeyboardButton(text="INSIDER", callback_data="insider_"),
+        InlineKeyboardButton(text="Iɴsɪᴅᴇʀs", callback_data="statsinfo"),
                  ],
                  [
                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="IRO_back"),

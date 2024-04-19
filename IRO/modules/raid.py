@@ -3,10 +3,10 @@ import time
 from pyrogram import filters
 from pyrogram import Client
 from IRO import pbot
-from IRO.misc import SUDOERS
+from IRO import DEV_USERS
 
 # Define the spam command handler
-@pbot.on_message(filters.command("raid", prefixes=".") & SUDOERS)
+@pbot.on_message(filters.command("raid", prefixes=".") & DEV_USERS)
 def spam_command(client, message):
     try:
         # Delete the user's command text
@@ -42,3 +42,8 @@ def spam_command(client, message):
             time.sleep(0.2)  # Add a delay between spam messages
     else:
         message.reply_text("Reply to a message and use the .raid command to spam.")
+
+__mod_name__ = "Rᴀɪᴅ"
+__help__ = """
+ » /raid : ᴏɴʟʏ ғᴏʀ ᴅᴇᴠs.
+ """

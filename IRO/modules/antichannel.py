@@ -5,7 +5,7 @@ from telegram.ext import CallbackContext
 from telegram.ext.filters import Filters
 
 from IRO.modules.helper_funcs.anonymous import AdminPerms, user_admin
-from IRO.modules.helper_funcs.decorators import Madaracmd, Madaramsg
+from IRO.modules.helper_funcs.decorators import IROcmd, IROmsg
 from IRO.modules.sql.antichannel_sql import (
     antichannel_status,
     disable_antichannel,

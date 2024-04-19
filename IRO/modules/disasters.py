@@ -507,12 +507,15 @@ def sudolist(update: Update, context: CallbackContext):
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
 
-@run_async
 @whitelist_plus
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
+    m = update.effective_message.reply_text(
+        "<code>ɢᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ ғʀᴏᴍ ʜʏᴅʀᴀ HQ..</code>",
+        parse_mode=ParseMode.HTML,
+    )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>ʜᴇʀᴏ ᴀꜱꜱᴏᴄɪᴀᴛɪᴏɴ ᴍᴇᴍʙᴇʀꜱ ⚡️:</b>\n"
+    reply = "<b>ʜᴇʀᴏ ᴀꜱꜱᴏᴄɪᴀᴛɪᴏɴ ᴍᴇᴍʙᴇʀꜱ ⚡️:</b>\n\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -520,7 +523,7 @@ def devlist(update: Update, context: CallbackContext):
             reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
         except TelegramError:
             pass
-    update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
+    m.edit_text(reply, parse_mode=ParseMode.HTML)
 
 
 __help__ = f"""

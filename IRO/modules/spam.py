@@ -31,7 +31,7 @@ from datetime import timedelta
 from telethon import events
 
 from IRO import pbot
-from IRO.modules.helper_funcs.chat_status import *
+from IRO.modules.helper_funcs.chat_status import is_admin
 
 
 @pbot.on(events.NewMessage(pattern="[!?/]spam"))

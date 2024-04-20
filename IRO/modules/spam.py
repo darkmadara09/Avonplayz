@@ -34,7 +34,7 @@ from IRO import pbot
 from IRO.modules.helper_funcs.chat_status import *
 
 
-@pbot.on(events.NewMessage(pattern="[!?/]spam"))
+@pbot.on_message(filters.command(["spam"]))
 @is_admin
 async def spam(event, perm):
     if not perm.ban_users:

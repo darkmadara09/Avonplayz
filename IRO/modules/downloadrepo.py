@@ -25,7 +25,7 @@ LIABILITY, WHETHER IN AN ACTION**
 
 
 from pyrogram import Client, filters
-import git
+import github
 import shutil
 import os
 from IRO import pbot

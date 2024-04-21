@@ -23,7 +23,7 @@ async def instatus(pbot, message):
         uncached = 0
         async for ban in pbot.get_chat_members(message.chat.id, filter=enums.ChatMembersFilter.BANNED):
             banned += 1
-        async for member in app.get_chat_members(message.chat.id):
+        async for member in pbot.get_chat_members(message.chat.id):
             user = member.user
             if user.is_deleted:
                 deleted_acc += 1

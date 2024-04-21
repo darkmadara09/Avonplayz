@@ -73,4 +73,3 @@ python-arq
 httpx[http2]
 pydub
 qrcode
-shutil

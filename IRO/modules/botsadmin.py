@@ -2,7 +2,6 @@ import os
 import asyncio
 import filters
 import html
-from IRO import as pbot
 from IRO.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
     bot_admin,
@@ -11,6 +10,7 @@ from IRO.modules.helper_funcs.chat_status import (
     connection_status,
     user_admin,
 )
+from IRO import as pbot
 
 @pbot.on_message(filters.command("bots"))
 async def listbots(client, message):

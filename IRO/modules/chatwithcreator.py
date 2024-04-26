@@ -1,5 +1,5 @@
 # change clients here
-from IRO import client as pbot
+from IRO import pbot
 from pyrogram import filters
 from pyrogram.types import ForceReply, InlineKeyboardMarkup, InlineKeyboardButton
 

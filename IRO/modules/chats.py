@@ -10,11 +10,11 @@ async def chatbot(_, message: Message):
     if message.chat.type != ChatType.PRIVATE:
         if not message.reply_to_message:
             return
-        if message.reply_to_message.from_user.id != (await bot.get_me()).id:
+        if message.reply_to_message.from_user.id != (await pbot.get_me()).id:
             return
     if message.text and message.text[0] in ["/", "!", "?", "."]:
         return
-    await bot.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
+    await pbot.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
     
     response = requests.get(f"https://pervert-api.onrender.com/chatbot/{message.text}")
     if response.status_code == 200:

@@ -9,10 +9,10 @@ import requests
 import time
 import os
 from pyrogram import filters
-from REPO import app
+from IRO import pbot
 
 # Command handler for /generate
-@app.on_message(filters.command('generate'))
+@pbot.on_message(filters.command('generate'))
 async def generate_image(client, message):
     # Get the prompt from the command
     prompt = ' '.join(message.command[1:])

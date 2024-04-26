@@ -19,7 +19,7 @@ def fetch_data(api_url: str, query: str) -> tuple:
     except Exception as e:
         return None, f"An error occurred: {str(e)}"
 
-@pbot.on_message(filters.command("characterai))
+@pbot.on_message(filters.command("characterai"))
 async def characterai(_: Client, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("Please provide a query.")

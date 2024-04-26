@@ -1,9 +1,8 @@
-
 from requests import get 
-from repo import client 
+from IRO import pbot
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto
-@bot.on_message(filters.command("pinterest"))
+@pbot.on_message(filters.command("pinterest"))
 async def pinterest(_, message):
      chat_id = message.chat.id
      try:

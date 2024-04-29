@@ -110,7 +110,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="IRO_"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/DazaiXUpdates"),
     ],
     [
         InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
@@ -450,8 +450,8 @@ def IRO_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/Muichiro_Updates"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/Muichiro_support"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/DazaiXUpdates"),
                  ],
                  [
         InlineKeyboardButton(text="Iɴsɪᴅᴇʀs", callback_data="statsinfo"),

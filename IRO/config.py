@@ -12,24 +12,24 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
      
-    API_ID = 123456  # integer value, dont use "" this sign get it form my.telegram.org
-    API_HASH = "" # get it form my.telegram.org
+    API_ID = 29143195  # integer value, dont use "" this sign get it form my.telegram.org
+    API_HASH = "0f81a3974ac1e6b594252b3503174303" # get it form my.telegram.org
     TOKEN = ""  # get it form @botfather.
-    OWNER_ID = 6045293810  # got to @Iro_m_bot and type /id
-    OWNER_USERNAME = "shaeep43" # your telegram username
+    OWNER_ID = 6529892817  # got to @Iro_m_bot and type /id
+    OWNER_USERNAME = "Equinixs" # your telegram username
     ALLOW_CHATS = True # leave it as it is
-    BOT_USERNAME = "Iro_m_bot" # your bot username get it form @botfather
+    BOT_USERNAME = "Dazaibeta_ixbot" # your bot username get it form @botfather
     NETWORK_USERNAME = "ix_updates"
     SUPPORT_CHAT = "iro_x_support"  # Your own group for support, do not add the @ if you dont have leave it as it is
     UPDATES_CHANNEL = "iro_bot_support"  # Your own chsnnel for support, do not add the @ if you dont have leave it as it is
     JOIN_LOGGER =  (
-        -1001690301851
+        -1002105949046
     )  # add @Iro_m_bot in your group and type /id
     EVENT_LOGS = (
-        -1001690301851
+        -1002105949046
     )  # add @Iro_m_bot in your group and type /id
     ERROR_LOG = (
-        -1001690301851
+        -1002105949046
     )  # add @Iro_m_bot in your group and type /id
     STRICT_GMUTE = True #to allow gmutes
     START_STICKER = "" #sticker id for start animation
@@ -39,10 +39,10 @@ class Config(object):
 
 
     # RECOMMENDED
-    STRING_SESSION ="" #telethon string session of user or bot get it from @Iro_string_bot
+    STRING_SESSION = "1BVtsOK8Bu4gsWwQ1TJSZ32M3g0EzWYmQ86fLEYZpIJMKyBhndMR7O6_eb4smd_GWdrRZfoWnKqECO5bEw8k7hr6nEGkjjHvqPk0PkFfzfhDBtxXxJoLgfs2fCaH-vwglUB5f7XMPKyrSmE_2SJ2Vb3apa3x8_AaH0qT0CBay8Bjp4zmiz4W6Nxlkr1hDoRMzW-smI8qKTujSwjIu4QCZHK5aVzaDzHUU20Kc77cOeAYw0LKo9tkdwlfx_Sz06qV48Mi1Vy6376vEsEswx2E8BOnEpPaE2P6Pw5XsLUUiCpbhci7mY3Jhe5VCIplHytLkgHH-YR3me8H5R-0D51SJ06NmdGUgNu4=" #telethon string session of user or bot get it from @Iro_string_bot
     DB_NAME = ""
-    MONGO_DB_URI = "" #get it from mongodb.com get
-    ARQ_API_KEY = "" #git it form @ARQRobot
+    MONGO_DB_URI = "mongodb+srv://Obito:Obito@obito.uolt8k3.mongodb.net/?retryWrites=true&w=majority" #get it from mongodb.com get
+    ARQ_API_KEY = "GFUXSS-XJINVJ-CMIQKI-NHHBNS" #git it form @ARQRobot
     ARQ_API_URL = "https://arq.hamker.in" # dont change
     SQLALCHEMY_DATABASE_URL = ""  # needed for any database modules get it from https://www.elephantsql.com/
     LOAD = []
@@ -50,7 +50,7 @@ class Config(object):
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = "3624487efd8e4ca9c949f1ab99654ad1e4de854f41a14afd00f3ca82d808dc8c"  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = "bGPQ5_uXd2gxW2SiMkKNLm360HOtmAZpyf44aJOwI33ofIbE1oNtMeIf23Ru02a9"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@iro_x_support"
 
 

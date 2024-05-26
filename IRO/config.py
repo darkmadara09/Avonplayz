@@ -32,7 +32,7 @@ class Config(object):
         -1002105949046
     )  # add @Iro_m_bot in your group and type /id
     STRICT_GMUTE = True #to allow gmutes
-    START_STICKER = "" #sticker id for start animation
+    START_STICKER = "CAACAgUAAx0Ce8yOxwAC2MlmU3_HtB15G_vDwig8i4Be8TDxrgAC1QwAAtjQoVagm6q4xT56cB4E" #sticker id for start animation
     TEMP_DOWNLOAD_DIRECTORY = ". /" # dont change
     OPENWEATHERMAP_ID = None
 
@@ -64,7 +64,7 @@ class Config(object):
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     TIGERS = [6045293810]
     WOLVES = [6045293810]
-    START_IMG = "https://te.legra.ph/file/32018201f5562ffa3fcc9.jpg" #yor fav img link
+    START_IMG = "https://graph.org/file/8f041d46eb3d38cc759cc.jpg" #yor fav img link
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.

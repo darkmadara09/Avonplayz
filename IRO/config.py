@@ -40,7 +40,7 @@ class Config(object):
 
     # RECOMMENDED
     STRING_SESSION = "1BVtsOK8Bu4gsWwQ1TJSZ32M3g0EzWYmQ86fLEYZpIJMKyBhndMR7O6_eb4smd_GWdrRZfoWnKqECO5bEw8k7hr6nEGkjjHvqPk0PkFfzfhDBtxXxJoLgfs2fCaH-vwglUB5f7XMPKyrSmE_2SJ2Vb3apa3x8_AaH0qT0CBay8Bjp4zmiz4W6Nxlkr1hDoRMzW-smI8qKTujSwjIu4QCZHK5aVzaDzHUU20Kc77cOeAYw0LKo9tkdwlfx_Sz06qV48Mi1Vy6376vEsEswx2E8BOnEpPaE2P6Pw5XsLUUiCpbhci7mY3Jhe5VCIplHytLkgHH-YR3me8H5R-0D51SJ06NmdGUgNu4=" #telethon string session of user or bot get it from @Iro_string_bot
-    DB_NAME = ""
+    DB_NAME = "Obito"
     MONGO_DB_URI = "mongodb+srv://Obito:Obito@obito.uolt8k3.mongodb.net/?retryWrites=true&w=majority" #get it from mongodb.com get
     ARQ_API_KEY = "GFUXSS-XJINVJ-CMIQKI-NHHBNS" #git it form @ARQRobot
     ARQ_API_URL = "https://arq.hamker.in" # dont change

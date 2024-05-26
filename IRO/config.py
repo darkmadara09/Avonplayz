@@ -14,7 +14,7 @@ class Config(object):
      
     API_ID = 29143195  # integer value, dont use "" this sign get it form my.telegram.org
     API_HASH = "0f81a3974ac1e6b594252b3503174303" # get it form my.telegram.org
-    TOKEN = ""  # get it form @botfather.
+    TOKEN = "7403982640:AAGcCPRSv6oMl_ydhnkzNPBOgswJV8AwOUE"  # get it form @botfather.
     OWNER_ID = 6529892817  # got to @Iro_m_bot and type /id
     OWNER_USERNAME = "Equinixs" # your telegram username
     ALLOW_CHATS = True # leave it as it is

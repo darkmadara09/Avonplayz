@@ -44,7 +44,7 @@ class Config(object):
     MONGO_DB_URI = "mongodb+srv://Obito:Obito@obito.uolt8k3.mongodb.net/?retryWrites=true&w=majority" #get it from mongodb.com get
     ARQ_API_KEY = "GFUXSS-XJINVJ-CMIQKI-NHHBNS" #git it form @ARQRobot
     ARQ_API_URL = "https://arq.hamker.in" # dont change
-    SQLALCHEMY_DATABASE_URL = "postgres://dwhesbut:l0W9zw6yDi38CuwbOrI3ztJJ3FdjEnAH@flora.db.elephantsql.com/dwhesbut"  # needed for any database modules get it from https://www.elephantsql.com/
+    SQLALCHEMY_DATABASE_URL = "postgres://ufkji1bcmgibql:pd3a8d235fd8cc99dd58da419133c0f0b83fc43e31fd212b61ddc7628852c6a97@ce0lkuo944ch99.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d8agip3apc8867"  # needed for any database modules get it from https://www.elephantsql.com/
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False

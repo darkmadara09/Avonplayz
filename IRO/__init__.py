@@ -43,7 +43,7 @@ LOGGER.info("ॐ नमो भगवते वासुदेवाय नमः
 LOGGER.info("Project maintained by: github.com/IR-O (t.me/shaeep43)")
 
 # if version < 3.9, stop bot.
-if sys.version_info[0] < 3 or sys.version_info[1] < 9:
+if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
         "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
     )

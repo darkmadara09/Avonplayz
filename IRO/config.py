@@ -23,13 +23,13 @@ class Config(object):
     SUPPORT_CHAT = "iro_x_support"  # Your own group for support, do not add the @ if you dont have leave it as it is
     UPDATES_CHANNEL = "iro_bot_support"  # Your own chsnnel for support, do not add the @ if you dont have leave it as it is
     JOIN_LOGGER =  (
-        -1002105949046
+        -1002117240104
     )  # add @Iro_m_bot in your group and type /id
     EVENT_LOGS = (
-        -1002105949046
+        -1002117240104
     )  # add @Iro_m_bot in your group and type /id
     ERROR_LOG = (
-        -1002105949046
+        -1002117240104
     )  # add @Iro_m_bot in your group and type /id
     STRICT_GMUTE = True #to allow gmutes
     START_STICKER = "CAACAgUAAx0Ce8yOxwAC2MlmU3_HtB15G_vDwig8i4Be8TDxrgAC1QwAAtjQoVagm6q4xT56cB4E" #sticker id for start animation

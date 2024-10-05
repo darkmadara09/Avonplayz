@@ -15,21 +15,21 @@ class Config(object):
     API_ID = 29143195  # integer value, dont use "" this sign get it form my.telegram.org
     API_HASH = "0f81a3974ac1e6b594252b3503174303" # get it form my.telegram.org
     TOKEN = "6964505365:AAGzwpo-uLIRIqu5ixfCNW1pQ7H85OMpb-E"  # get it form @botfather.
-    OWNER_ID = 6529892817  # got to @Iro_m_bot and type /id
-    OWNER_USERNAME = "Equinixs" # your telegram username
+    OWNER_ID = 6989199420  # got to @Iro_m_bot and type /id
+    OWNER_USERNAME = "User_death_by_devil" # your telegram username
     ALLOW_CHATS = True # leave it as it is
     BOT_USERNAME = "Dazai_ixbot" # your bot username get it form @botfather
     NETWORK_USERNAME = "Alpha_Bots_Updates"
     SUPPORT_CHAT = "Alpha_Bots_Support"  # Your own group for support, do not add the @ if you dont have leave it as it is
     UPDATES_CHANNEL = "Alpha_Bots_Updates"  # Your own chsnnel for support, do not add the @ if you dont have leave it as it is
     JOIN_LOGGER =  (
-        -1002117240104
+        -1002237183191
     )  # add @Iro_m_bot in your group and type /id
     EVENT_LOGS = (
-        -1002117240104
+        -1002237183191
     )  # add @Iro_m_bot in your group and type /id
     ERROR_LOG = (
-        -1002117240104
+        -1002237183191
     )  # add @Iro_m_bot in your group and type /id
     STRICT_GMUTE = True #to allow gmutes
     START_STICKER = "CAACAgUAAx0Ce8yOxwAC2MlmU3_HtB15G_vDwig8i4Be8TDxrgAC1QwAAtjQoVagm6q4xT56cB4E" #sticker id for start animation

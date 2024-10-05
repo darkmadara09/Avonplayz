@@ -39,9 +39,9 @@ class Config(object):
 
 
     # RECOMMENDED
-    STRING_SESSION = "1BVtsOHUBu74yhmViJVt_pCtthzeg0X09Pd0Gmxf_s1bpGQ0tXQMoAaHzOd3ogCdIF67A2bAq2roPhh0lC4IS9iliM-bpVU8SKaHkYDChsQBCff6gJMMRpgOS51wGCUqU2Kj3WyljBDZq7kqkOGOoSMcB1Xk7ZOoLeurN_GrJ0LMtes2Ba0B9BoOQrHZ5spxUE9WdVNlyPIR46tkHW6u6TI5ky0ew_RotVzR0VKgMqevstekHqOGEKMSngMP6njtQg3WsGoAzePMZn1oPTk7MPlbe27F7H-6EpvAhM2BB9h5XcX47OO78xgqt9AG0wDAA0oMGavHE8x8pD4ITwcbEJMXJEXymUNg=" #telethon string session of user or bot get it from @Iro_string_bot
+    STRING_SESSION = "1BVtsOL8Bu5roWUVwlkRRNqCQbgVfdI1oC0syZjme1fMzBsrb3IzvS6OUPzdJXU-fLMd8nR0Fkv7fP8Lt0y17abw9gPCD2Y_5jGMLmWh3PmwIVlv8phg0vTUw_FpTa9cfUzzRj_Xip4-NgfFtMMFba9-OQvKB25GI3W8SiQB3V1mQp_P5bcSB5emJlldkumVzyQ0hkEEzVkQzt7S5zp6XuHClY16dDigAz2QiuMO_4UaGUcYL5JdDWodgNwWGjhDLEZl6l-rGepqvUs1FbYcMw_6yPGDpMNwvwtrUpkeZ4siPl2c0I4EolTbMMAxvbZfQ-aC1un2iq1nvItPcISJZ8OGsvDba6cw=" #telethon string session of user or bot get it from @Iro_string_bot
     DB_NAME = "Obito"
-    MONGO_DB_URI = "mongodb+srv://Obito:Obito@obito.uolt8k3.mongodb.net/?retryWrites=true&w=majority" #get it from mongodb.com get
+    MONGO_DB_URI = "mongodb+srv://bikash:bikash@bikash.3jkvhp7.mongodb.net/?retryWrites=true&w=majority" #get it from mongodb.com get
     ARQ_API_KEY = "GFUXSS-XJINVJ-CMIQKI-NHHBNS" #git it form @ARQRobot
     ARQ_API_URL = "https://arq.hamker.in" # dont change
     SQLALCHEMY_DATABASE_URL = "postgres://dwhesbut:l0W9zw6yDi38CuwbOrI3ztJJ3FdjEnAH@flora.db.elephantsql.com/dwhesbut"  # needed for any database modules get it from https://www.elephantsql.com/

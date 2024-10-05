@@ -39,7 +39,7 @@ class Config(object):
 
 
     # RECOMMENDED
-    STRING_SESSION = "1BVtsOL8Bu5roWUVwlkRRNqCQbgVfdI1oC0syZjme1fMzBsrb3IzvS6OUPzdJXU-fLMd8nR0Fkv7fP8Lt0y17abw9gPCD2Y_5jGMLmWh3PmwIVlv8phg0vTUw_FpTa9cfUzzRj_Xip4-NgfFtMMFba9-OQvKB25GI3W8SiQB3V1mQp_P5bcSB5emJlldkumVzyQ0hkEEzVkQzt7S5zp6XuHClY16dDigAz2QiuMO_4UaGUcYL5JdDWodgNwWGjhDLEZl6l-rGepqvUs1FbYcMw_6yPGDpMNwvwtrUpkeZ4siPl2c0I4EolTbMMAxvbZfQ-aC1un2iq1nvItPcISJZ8OGsvDba6cw=" #telethon string session of user or bot get it from @Iro_string_bot
+    STRING_SESSION = "1BVtsOL8Buy8Kras7aqu3ivWFiCt_XKIS9vFjpXYJ7UpuyrtvA4x7z_qXNEj8RRRLyS6InV93Jq0pRhByZ-z1TVec-uY_xlSdQro8ofIYYsSY53GYgZ2eEMrR8AaxbQ-XTyhtkKQza8V7TYjY84A9IU9aRuHG0FOd9Puprdtd-A5DKXI3_uMlA7BpTx3ypjF-kpi3iy-XsV5N4BJLmYjL0oBPu3IElR8JNhhkHFJ2yeeDApelva3cUfQdy1KfJOScByxlrHqcprl0Hz1VmV2FmZRY5ga9Cwd9ZMFuAMF8Ny9-PjxZP1NPHp7KoJbYid9w4L4b0q9FH0j803ljYmjEJ7tjLiiVkw0=" #telethon string session of user or bot get it from @Iro_string_bot
     DB_NAME = "Obito"
     MONGO_DB_URI = "mongodb+srv://bikash:bikash@bikash.3jkvhp7.mongodb.net/?retryWrites=true&w=majority" #get it from mongodb.com get
     ARQ_API_KEY = "GFUXSS-XJINVJ-CMIQKI-NHHBNS" #git it form @ARQRobot
